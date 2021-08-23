@@ -4,7 +4,7 @@
 
 不保证内容正确，恳请指正。
 
-提供`Markdown`格式的[离线版电子书](https://github.com/luoxufeiyan/wiki.luoxufeiyan.com/tree/main)下载。
+提供`Markdown`格式的[离线版电子书](https://github.com/luoxufeiyan/wiki.luoxufeiyan.com/tree/master/docs)下载。
 
 同样欢迎来博客坐坐：[落絮飞雁的个人网站 | 顺流而下，把梦做完](https://www.luoxufeiyan.com/)。
 
