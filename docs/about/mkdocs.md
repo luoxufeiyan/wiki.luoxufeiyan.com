@@ -1,4 +1,4 @@
-# Obsidian 笔记
+# Migrate to MkDocs
 
 
 将 Dokuwiki 扩展名改为 markdown
@@ -19,3 +19,9 @@ for subdir, dirs, files in os.walk(directory):
 ```
 
 update img format `![[dir/imgurl.png]]` to markdown format `![]()`
+
+## zh-CN issue
+
+Currently, the MkDocs project did not support Chinese keyword search.
+
+https://github.com/mkdocs/mkdocs/issues/2509#issuecomment-882689383
