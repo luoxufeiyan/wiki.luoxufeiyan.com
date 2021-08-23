@@ -1,0 +1,6 @@
+site_name: 落絮飞雁的知识库
+site_url: https://wiki.luoxufeiyan.com/
+theme:
+  name: mkdocs
+  navigation_depth: 5
+repo_url: hhttps://github.com/luoxufeiyan/wiki.luoxufeiyan.com
