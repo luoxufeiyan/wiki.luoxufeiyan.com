@@ -17,3 +17,5 @@ for subdir, dirs, files in os.walk(directory):
    newFilePath = filePath.replace(".txt",".md") #create the new name
    os.rename(filePath, newFilePath) #rename your file
 ```
+
+update img format `![[dir/imgurl.png]]` to markdown format `![]()`
