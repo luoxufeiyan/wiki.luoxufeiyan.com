@@ -8,8 +8,6 @@
 
 ## 编程入门
 
-* [python学习资源](https://x-team.com/blog/essential-python-resources/)
-* [写给普通人的正则教程](https://refrf.shreyasminocha.me/)
 
 ## 开发工具
 
