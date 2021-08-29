@@ -18,6 +18,8 @@ apply migration: `php artisan migrate`
 
 dry-run (show all changes but not apply): `php artisan migrate --pretend`
 
+Redo all migrations: `php artisan migrate:refresh`
+
 ## Dev env
 
 Valet
