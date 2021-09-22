@@ -16,17 +16,23 @@ sudo mkdir /mnt/nas0
 sudo mount -t cifs //192.168.0.3/Public /mnt/nas0 -o user=luoxufeiyan,password=MyPasswd
 ```
 
+匿名挂载： `mount -t cifs //192.168.0.5/Public /mnt/share -o user=,file_mode=0777,dir_mode=0777,unc=\\\\192.168.0.5\\Public`
+
 如果需要非root也可写的话：
 ```
 sudo mount -t cifs //192.168.0.3/Public /mnt/nas0 -o user=luoxufeiyan,password=MyPasswd,rw,uid=0,gid=0,dir_mode=0777,file_mode=0777
 ```
 
-如果要永久挂载的话需要写`/etc/fstab`文件,详：[[https://wiki.ubuntu.com/MountWindowsSharesPermanently|MountWindowsSharesPermanently - Ubuntu Wiki]]。
+如果要永久挂载的话需要写`/etc/fstab`文件,详：[MountWindowsSharesPermanently - Ubuntu Wiki](https://wiki.ubuntu.com/MountWindowsSharesPermanently)。
 
 ```
 //192.168.0.3/Public  /mnt/spc  cifs  user=luoxufeiyan,password=MyPasswd,workgroup=WORKGROUP,file_mode=0777,dir_mode=0777,uid=pi,gid=pi,forceuid,forcegid  0  0
 
 ```
 
-aria2或者transmission可能会遇到allocation 问题，需关闭preallocation。
+匿名挂载： `//192.168.0.5/Public /mnt/share cifs username=,file_mode=0777,dir_mode=0777	 0	 0`
 
+aria2或者transmission可能会遇到allocation 问题，需在 transmission 的配置中关闭preallocation。
+
+## Ref
+* [[OpenWrt Wiki] CIFS Client](https://openwrt.org/docs/guide-user/services/nas/cifs.client)
