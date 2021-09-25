@@ -5,13 +5,13 @@
 
 <del>从IDCF clond搬到了美国东部一台只有可怜的512MB内存的云主机上。纪念一下天国的IDCF云。</del>
 
-![IDCF speed](https://beta.speedtest.net/result/6807083900.png)
+![IDCF speed](https://www.speedtest.net/result/6807083900.png)
 
 ## Dokuwiki
 
 知识库使用`DokuWiki`搭建的，记录一下修改的部分，也许以后会单独写一篇文章。
 
-修改时区：[[https://www.dokuwiki.org/zh:tips:timezone|设置时区]]为北京时间。
+修改时区：[设置时区](https://www.dokuwiki.org/zh:tips:timezone)为北京时间。
 
 设置 useheading:使用“标题 H1”作为页面名称。
 
@@ -26,7 +26,7 @@
 ### TODO
 
 * ✅<del>左侧导航栏</del>
-* ✅<del>可用性监控</del> 监控已经添加：[[https://stats.uptimerobot.com/28zlmInqx|落絮飞雁的可用性监控]]
+* ✅<del>可用性监控</del> 监控已经添加：[落絮飞雁的可用性监控](https://stats.uptimerobot.com/28zlmInqx)
 * ✅<del>知识库下载（离线查看）</del> 
 
 
