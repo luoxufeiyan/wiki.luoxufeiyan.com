@@ -34,5 +34,9 @@ sudo mount -t cifs //192.168.0.3/Public /mnt/nas0 -o user=luoxufeiyan,password=M
 
 aria2或者transmission可能会遇到allocation 问题，需在 transmission 的配置中关闭preallocation。
 
+对于树莓派，选择启用 `Wait for Network at Boot`。
+  1. 输入`sudo raspi-config`
+  2. `Boot Options > Wait for Network at Boot > Yes `
+
 ## Ref
 * [[OpenWrt Wiki] CIFS Client](https://openwrt.org/docs/guide-user/services/nas/cifs.client)
