@@ -31,6 +31,7 @@
 * [鸠摩搜书](https://www.jiumodiary.com)
 * [阅读链](https://www.yuedu.pro)
 * [PDF之家](https://pdfzj.com/)
+* [高等教育出版社的所有教材](https://ebook.hep.com.cn/ebooks/index.html)
 * <del>Kindle推 ：电子书推送到Kindle。</del>
 
 ### 繁体书
