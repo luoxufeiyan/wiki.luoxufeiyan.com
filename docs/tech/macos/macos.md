@@ -35,3 +35,8 @@ brew install --cask rescuetime
 ```
 brew install --cask lyricsx
 ```
+
+* Rss reader
+```
+brew install --cask netnewswire
+```
