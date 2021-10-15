@@ -21,7 +21,7 @@ conda env export > <environment-name>.yml
 conda env create -f <environment-name>.yml
 ```
 
-[[https://gist.github.com/pratos/e167d4b002f5d888d0726a5b5ddcca57|To package a conda environment (Requirement.txt and virtual environment)]]
+[To package a conda environment (Requirement.txt and virtual environment)](https://gist.github.com/pratos/e167d4b002f5d888d0726a5b5ddcca57)
 
 ## Add channel
 
