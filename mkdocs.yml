@@ -8,6 +8,6 @@ theme:
   navigation_depth: 5
   analytics:
     gtag: G-DDN9KL3G0X
-  locale: zh_CN
+  #locale: zh_CN
 repo_url: https://github.com/luoxufeiyan/wiki.luoxufeiyan.com
 site_dir: "site"
