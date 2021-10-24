@@ -9,8 +9,3 @@
 > This knowledge base is provided as is without warranty of any kind. 
 > 
 > 本知识库不保证内容正确，不提供售后。
-
-## 公告
-喝最烈的酒，学最难的习！
-
-![喝最烈的酒，学最难的习！](about/drinknstudy.gif)
