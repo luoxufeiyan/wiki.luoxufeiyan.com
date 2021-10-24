@@ -13,4 +13,4 @@
 ## 公告
 喝最烈的酒，学最难的习！
 
-![喝最烈的酒，学最难的习！](https://i.loli.net/2020/07/19/IYMhlByW9C5Au2c.gif)
+![喝最烈的酒，学最难的习！](about/drinknstudy.gif)
