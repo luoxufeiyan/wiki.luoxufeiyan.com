@@ -3,7 +3,7 @@
 ### 列表新增元素
 
 1.
-```
+```python
 shopping_list = []
 fruit = {"apple":3.2, "orange": 2.4, "banana": 1.7, "kiwi": 2.5}
 for key in fruit:
@@ -85,7 +85,9 @@ print(...)
 with open("test.txt") as test:
     ...
 ```
-此写法不需要f.close()
+此写法不需要f.close()，简洁。
+
+扩展阅读：[Python 读写文件时不用 with 也不关闭文件，这样的风格好吗？ - V2EX](https://v2ex.com/t/765647)
 
 ### 二维数组排序
 

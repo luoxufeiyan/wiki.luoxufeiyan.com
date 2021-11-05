@@ -6,31 +6,31 @@
 
 ## 修改 flask_login view
 
-[[https://flask-login.readthedocs.io/en/latest/#customizing-the-login-process|Customizing the Login Process]]
+[Customizing the Login Process](https://flask-login.readthedocs.io/en/latest/#customizing-the-login-process)
 
 ## App not registered on db
 
-[[https://stackoverflow.com/questions/19437883/when-scattering-flask-models-runtimeerror-application-not-registered-on-db-w|python - When scattering Flask Models, RuntimeError: &#39;application not registered on db&#39; was raised - Stack Overflow]]
+[python - When scattering Flask Models, RuntimeError: &#39;application not registered on db&#39; was raised - Stack Overflow](https://stackoverflow.com/questions/19437883/when-scattering-flask-models-runtimeerror-application-not-registered-on-db-w)
 
-[[https://piotr.banaszkiewicz.org/blog/2012/06/29/flask-sqlalchemy-init_app/|Flask and SQLAlchemy: init_app &middot; Blog]]
+[Flask and SQLAlchemy: init_app &middot; Blog](https://piotr.banaszkiewicz.org/blog/2012/06/29/flask-sqlalchemy-init_app/)
 
 ## WTForms SelectField 指定 数据类型
 
 flask-navi 
 
 
-```
+```python
 group_id = SelectField('组别', validators=[DataRequired()], choices=all_groups, coerce=int)
 
 ```
 
 ## SelectField结合sqlalchemy刷新机制
 
-[[https://segmentfault.com/q/1010000011641873|python - wtforms中的SelectField结合sqlalchemy刷新机制是什么样的 - SegmentFault 思否]]
+[python - wtforms中的SelectField结合sqlalchemy刷新机制是什么样的 - SegmentFault 思否](https://segmentfault.com/q/1010000011641873)
 
 ## 参考
 
-[[https://www.kancloud.cn/hartnett/flask/131479|Flask中文文档 · 看云]]
+[Flask中文文档 · 看云](https://www.kancloud.cn/hartnett/flask/131479)
 
 [Python Flask高级编程之从0到1开发《鱼书》精品项目](https://coding.imooc.com/class/chapter/194.html)
 
