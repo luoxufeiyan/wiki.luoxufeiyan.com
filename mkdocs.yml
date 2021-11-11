@@ -2,14 +2,20 @@ site_name: 落絮飞雁的知识库
 site_url: https://wiki.luoxufeiyan.com/
 site_description: 落絮飞雁的个人笔记：生活，编程和随想。
 site_author: 落絮飞雁
-copyright: Attribution 4.0 International (CC BY 4.0)
-theme:
-  name: mkdocs
-  navigation_depth: 5
-  analytics:
-    gtag: G-DDN9KL3G0X
-  #locale: zh_CN
-repo_url: https://github.com/luoxufeiyan/wiki.luoxufeiyan.com
 site_dir: "site"
+copyright: Attribution 4.0 International (CC BY 4.0)
+repo_url: https://github.com/luoxufeiyan/wiki.luoxufeiyan.com
 markdown_extensions:
   - pymdownx.tilde
+theme:
+  name: material
+  logo: about/white_logo.png
+  favicon: about/favicon.ico
+  features:
+    - navigation.tabs
+    - navigation.indexes
+    - navigation.top
+extra:
+  analytics:
+    provider: google
+    property: G-DDN9KL3G0X
