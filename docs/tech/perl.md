@@ -6,21 +6,21 @@
 
 定义数组：
 
-```
+```perl
 @n1=(1,5,2,3,7,9);
 ($q, $w, $e, $r) = @n1;
 print("Numbers: @n1\n");
 print("elems are: $q, $w, $e, $r\n");
 ```
 
-```
+```perl
 Numbers: 1 5 2 3 7 9
 elems are: 1, 5, 2, 3
 ```
 
 获取长度用`$#a+1`或者`$a.""`
 
-```
+```perl
 #!/usr/bin/perl -w
 
 $a[0] = "My 1st string.";
@@ -43,7 +43,7 @@ print("b number is: ",$bn, "\n");
 print("b content are: ",$bp, "\n");
 ```
 
-```
+```perl
 (base) ➜  perl git:(master) ✗ perl aray_num.pl 
 Index of last elem is:2
 Total elem num is: 3
@@ -54,7 +54,7 @@ b content are: 123 456 789
 
 ## 哈希
 
-```
+```perl
 %a_hash = ('name' => 'Xin', 'age' =>22);
 ```
 
@@ -66,7 +66,7 @@ KV类型，类似python的dict，key无序。
 
 删除key：`delete($a_hash{'gender'});`
 
-```
+```perl
 #!/usr/bin/perl -w
 
 %a_hash = ('name' => 'Xin', 'age' =>22);
@@ -87,7 +87,7 @@ gender is F
 
 三种数据类型：
 
-```
+```perl
 $a_scalar = 10;
 @an_array = (1, 2, 3);
 $a_hash = ('name' => 'Xin', 'age' =>22);
@@ -107,7 +107,7 @@ Perl 只有`全局变量`, 没有局部变量。
 
 ### 从 STDIN 读入数据
 
-```
+```perl
 #!/usr/bin/perl -w
 
 # Read from input
@@ -138,7 +138,7 @@ foreach $line(<STDIN>){
 
 文件句柄需要使用尖括号包括。
 
-```
+```perl
 #!/usr/bin/perl -w
 
 $filename = $ARGV[0];
@@ -153,7 +153,7 @@ close F;
 
 #### 写文件
 
-```
+```perl
 #!/usr/bin/perl -w
 
 $filename = 'output.txt';
@@ -191,7 +191,7 @@ close(FR);
 
 默认逐字符比较。
 
-```
+```perl
 #!/usr/bin/perl -w
 @a = ("Hangzhou Zhejiang", "Peking Beijing", "Anyang Henan", "Zhengzhou Henan", "Sydney NSW", "Zibo Shandong");
 
@@ -205,7 +205,7 @@ Anyang Henan, Hangzhou Zhejiang, Peking Beijing, Sydney NSW, Zhengzhou Henan, Zi
 
 根据字符长度。
 
-```
+```perl
 @sorted = sort {length($a) cmp length($b)} @a;
 
 (base) ➜  perl git:(master) ✗ perl array2.pl
@@ -214,7 +214,7 @@ Sydney NSW, Anyang Henan, Zibo Shandong, Peking Beijing, Zhengzhou Henan, Hangzh
 
 根据省份
 
-```
+```perl
 #!/usr/bin/perl -w
 @a = ("Hangzhou Zhejiang", "Peking Beijing", "Anyang Henan", "Zhengzhou Henan", "Sydney NSW", "Zibo Shandong");
 
@@ -242,7 +242,7 @@ Peking Beijing, Anyang Henan, Zhengzhou Henan, Sydney NSW, Zibo Shandong, Hangzh
 * 在（正序）结果前加 `-`，对结果取返
 * 使用`reverse sort`
 
-```
+```perl
 #!/usr/bin/perl -w
 
 @a = (1,2,3,4,5,6,7);
@@ -266,7 +266,7 @@ print(join(', ', @s3));
 
 lc lowercase，转小写。
 
-```
+```perl
 #!/usr/bin/perl -w
 
 $word="Alex";
@@ -281,7 +281,7 @@ alex%
 
 使用`POSIX` 模块的`floor()`和`ceil()`函数。
 
-```
+```perl
 (base) ➜  playground cat floor.pl 
 #!/usr/bin/perl -w
 
@@ -305,7 +305,7 @@ Result of ceil is: 24
 
 `use File::Compare;`模块的`compare()`函数，文件不同会返回`1`。
 
-```
+```perl
 (base) ➜  playground cat compare.pl 
 #!/usr/bin/perl -w
 #
@@ -332,7 +332,7 @@ print($ans);
 
 全局匹配返回一个`@array`，包括了满足条件的所有结果。
 
-```
+```perl
 (base) ➜  playground cat regex_2.pl 
 #!/usr/bin/perl -w
 $str = "apple banana capsicum";
@@ -349,7 +349,7 @@ capsicum
 ```
 
 
-```
+```perl
 (base) ➜  playground cat regex_3.pl 
 #!/usr/bin/perl -w
 $str = "apple banana capsicum";
@@ -380,7 +380,7 @@ ref:
 
 Eg： 去掉字符中多余的tab和空格。
 
-```
+```perl
 $a = "Hi \t Nih   a     \w     o"; 
 $b = "HiNihao";
 
@@ -389,7 +389,7 @@ $a =~ s/[\t ]+//g;
 
 Eg： 单次匹配与全局匹配。
 
-```
+```perl
 $x = "I batted 4 for 4";
 $x =~ s/4/four/;   # $x contains "I batted four for 4"
 $x = "I batted 4 for 4";
@@ -401,7 +401,7 @@ $x =~ s/4/four/g;  # $x contains "I batted four for four"
 
 用`()`小括号标记grouped pattern，然后用`$1`提取。
 
-```
+```perl
 $y = "'quoted words'";
 $y =~ s/^'(.*)'$/$1/;  # strip single quotes,
                        # $y contains "quoted words"
@@ -409,7 +409,7 @@ $y =~ s/^'(.*)'$/$1/;  # strip single quotes,
 
 或者在第二行使用$1接收。
 
-```
+```perl
 $line =~ /"species": "(.*)"/)
 $curr_species = $1;
 ```
@@ -425,8 +425,7 @@ ref:
 
 用法为`split(/Pattern/, Expression)`。
 
-```
-
+```perl
 $x = "Apple      Banana       Capsicum Kiwi";
 @word = split /\s+/, $x; # Apple Banana Capsicum Kiwi
 ```
@@ -435,7 +434,7 @@ $x = "Apple      Banana       Capsicum Kiwi";
 
 可以将`for`语句写在表达式之后，eg:
 
-```
+```perl
 #!/usr/bin/perl -w
 
 for (<>){
@@ -445,7 +444,7 @@ for (<>){
 
 可以写为
 
-```
+```perl
 #!/usr/bin/perl -w
 print(join(' ', reverse split), "\n") for (<>);
 ```
@@ -455,7 +454,7 @@ print(join(' ', reverse split), "\n") for (<>);
 在`perlrun`手册中，`-p`参数可以在你的程序中假设以下循环。
 
 
-```
+```perl
 #!/usr/bin/perl -w -p
 $_ = join(' ', reverse split). "\n";
 ```
