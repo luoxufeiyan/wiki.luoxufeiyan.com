@@ -5,17 +5,25 @@ on:
       - master
 jobs:
   build:
-    name: SSH Deploy to Server
+    name: Deploy to Server
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Build
-        uses: Tiryoh/actions-mkdocs@v0
+
+      - name: Initialize Python
+        uses: actions/setup-python@v2
         with:
-          mkdocs_version: "latest" # option
-          requirements: "requirements.txt" # option
-          configfile: "mkdocs.yml" # option
+          python-version: "3.8"
+
+      - name: Install dependencies
+        run: |
+          pip install mkdocs
+          pip install mkdocs-material
+          pip install pymdown-extensions
+
+      - name: Build
+        run: mkdocs build --verbose --clean
 
       - name: Publish
         uses: dennisameling/ftp-upload-action@v1
