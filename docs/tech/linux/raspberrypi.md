@@ -35,7 +35,7 @@ sudo dpkg-reconfigure openssh-server
 ## 吃灰？
   * HomeBridge
   * aria2
-  * <del>MediaTomb</del> 不是很好用，还是miniDLNA吧。
+  * ~~MediaTomb~~ 不是很好用，还是miniDLNA吧。
   * DHT11房间温度监控
   * gammu手机短信转发
   * [[http://www.instructables.com/id/Plantbot-Beta/|智能花盆]]

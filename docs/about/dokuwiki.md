@@ -3,7 +3,7 @@
 
 知识库使用Dokuwiki搭建，GMO Cloud提供计算服务，支持`TLS1.3`访问。
 
-<del>从IDCF clond搬到了美国东部一台只有可怜的512MB内存的云主机上。纪念一下天国的IDCF云。</del>
+~~从IDCF clond搬到了美国东部一台只有可怜的512MB内存的云主机上。纪念一下天国的IDCF云。~~
 
 ![IDCF speed](https://www.speedtest.net/result/6807083900.png)
 
@@ -25,9 +25,9 @@
 
 ### TODO
 
-* ✅<del>左侧导航栏</del>
-* ✅<del>可用性监控</del> 监控已经添加：[落絮飞雁的可用性监控](https://stats.uptimerobot.com/28zlmInqx)
-* ✅<del>知识库下载（离线查看）</del> 
+* ✅~~左侧导航栏~~
+* ✅~~可用性监控~~ 监控已经添加：[落絮飞雁的可用性监控](https://stats.uptimerobot.com/28zlmInqx)
+* ✅~~知识库下载（离线查看）~~ 
 
 
 ### 图床

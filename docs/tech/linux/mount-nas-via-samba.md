@@ -10,7 +10,7 @@ sudo apt install samba-client cifs-utils
 ```
 sudo apt-get install nfs-common
 ```
-随后 <del>使用这段被祝福的代码</del> 挂载就可以了：
+随后 ~~使用这段被祝福的代码~~ 挂载就可以了：
 ```
 sudo mkdir /mnt/nas0
 sudo mount -t cifs //192.168.0.3/Public /mnt/nas0 -o user=luoxufeiyan,password=MyPasswd

@@ -35,7 +35,7 @@
 
 * Axure RP
 * [Origami studio:原型和动效设计](https://origami.design)
-* <del>[Quartz composer: 动效设计工具](https://developer.apple.com/documentation/quartz/quartz_composer)</del> 不再更新，建议用Origami。
+* ~~[Quartz composer: 动效设计工具](https://developer.apple.com/documentation/quartz/quartz_composer)~~ 不再更新，建议用Origami。
 
 ### ref
 

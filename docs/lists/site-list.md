@@ -1,6 +1,6 @@
 # 网站清单
 
-<del>🚧🚧🚧 **本页面已经停止维护，新项目：[Simple Navi|森破导航](https://navi.fledding.com/)**</del>
+~~🚧🚧🚧 **本页面已经停止维护，新项目：[Simple Navi|森破导航](https://navi.fledding.com/)**~~
 
 本项目又开始维护了。
 
