@@ -11,3 +11,5 @@ theme:
   #locale: zh_CN
 repo_url: https://github.com/luoxufeiyan/wiki.luoxufeiyan.com
 site_dir: "site"
+markdown_extensions:
+  - pymdownx.tilde
