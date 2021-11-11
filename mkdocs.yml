@@ -7,15 +7,24 @@ copyright: Attribution 4.0 International (CC BY 4.0)
 repo_url: https://github.com/luoxufeiyan/wiki.luoxufeiyan.com
 markdown_extensions:
   - pymdownx.tilde
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
+
 theme:
   name: material
+  custom_dir: overrides
   logo: about/white_logo.png
   favicon: about/favicon.ico
   features:
     - navigation.tabs
     - navigation.indexes
     - navigation.top
+    - navigation.tracking
+    - content.code.annotate
 extra:
   analytics:
     provider: google
     property: G-DDN9KL3G0X
+  disqus: ad # use adsense position to display ad
