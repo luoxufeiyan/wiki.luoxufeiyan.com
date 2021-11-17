@@ -2,6 +2,10 @@
 
 Lumen is a Laraverl based micro-framework.
 
+## quicknote
+
+serve the project: `php -S localhost:8000 -t public`
+
 ## Tips
 
 ### Make utf-8 charset for JSON response
