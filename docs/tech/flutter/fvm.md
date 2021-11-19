@@ -3,9 +3,6 @@
 fvm是一个 flutter 版本管理工具，类似于 python 的anaconda。可以方便的切换 flutter 版本。
 
 
-
-
-
 ## 安装
 
 Ref: [leoafarias/fvm: Flutter Version Management: A simple CLI &amp; GUI to manage Flutter SDK versions.](https://github.com/leoafarias/fvm#usage)
