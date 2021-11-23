@@ -11,7 +11,6 @@
 
 * [杭州电子科技大学图书馆](http://210.32.33.91:8080/reader/login.php)：借实体书
 * [杭州图书馆](https://www.hzlib.net/index.htm)：实体书，市民卡即是借书卡。
-* [浙江省公共图书馆资源服务门户](http://zjisa.zjlib.cn/home/zy_home.jsp)：大量通识、艺术和学术类数据库，包括知网。
 * [全国图书馆参考咨询联盟](http://www.ucdrs.superlib.net/)：查询图书馆存书。
 * 美亚 Kindle 商店：英文原版书。
 * 京东阅读：京东plus会员送的，`人民文学出版社`的书很多。
@@ -44,5 +43,10 @@
 
 ### 外文
 * [Project Gutenberg](http://www.gutenberg.org/help/new_website.html)
-* [Sci-Hub Scholar](https://sci-hub.se/)
 * [Free Computer Books](https://freecomputerbooks.com/)
+
+### 学术
+
+* [浙江省公共图书馆资源服务门户](http://zjisa.zjlib.cn/home/zy_home.jsp)：大量通识、艺术和学术类数据库，包括知网。
+* [iData知识搜索](https://www.cn-ki.net)：知网镜像。
+* [Sci-Hub Scholar](https://sci-hub.se/)
