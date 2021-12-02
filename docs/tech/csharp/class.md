@@ -1,11 +1,14 @@
 # 类 Class
 
+类是引用类型，意味着数据引用和实际数据都在申请内存。
+
 字段是类里面的变量。
 
 与C和cpp不同，c#在类型的外部不能声明全局变量（也就是变量或字段）。所有的**字段都属于类型**，而且必须在类型声明内部声明。
-同样的，c#中**没有全局函数（也就是方法或函数）**声明在类型声明的外部。
 
-### 访问修饰符：
+同样的，c#中 **没有全局函数（也就是方法或函数)** 声明在类型声明的外部。
+
+## 访问修饰符：
 
 指定成员的访问级别。
 
@@ -16,3 +19,171 @@
 * protected internal == protected + internal 派生出的子类和程序集内的类可以访问。
 
 抽象成员
+
+## 继承
+
+已存在的类称为基类（base class），新的类称为派生类（derived class）。
+
+派生类包括基类的成员和派生类中声明的成员。所有的类都派生自 object 类。
+
+### 访问继承的成员
+
+在派生类中，基类的成员可以被访问到，就像是派生类自己的成员一样。
+
+例，派生类的四个成员都可以被访问，不管是在基类中声明还是在派生类中声明。
+
+```c#
+namespace SimpleExample
+{
+    class MyBaseClass
+    {
+        public string BaseclassText = "base class text;";
+        public void BaseClassMethod(string value)
+        {
+            Console.WriteLine("Base class write: "+ value);
+        }
+    }
+
+    class MyDerivedClass : MyBaseClass
+    {
+        public string DerivedclassText = "derived class text;";
+        public void DerivedClassMethod(string value)
+        {
+            Console.WriteLine("Derived class write: " + value);
+        }
+    }
+    
+    class Program
+    {
+        static void Main()
+        {
+            MyDerivedClass md = new MyDerivedClass();
+            md.BaseClassMethod(md.BaseclassText);
+            md.BaseClassMethod(md.DerivedclassText);
+            md.DerivedClassMethod(md.BaseclassText);
+            md.DerivedClassMethod(md.DerivedclassText);
+        }
+    }
+}
+```
+
+输出：
+```cmd
+Base class write: base class text;
+Base class write: derived class text;
+Derived class write: base class text;
+Derived class write: derived class text;
+```
+
+### 屏蔽基类的成员
+
+可以通过在派生类中新建一个同名的成员来屏蔽基类成员。需要使用 `new` 修饰符告诉编译器需要屏蔽基类成员。
+
+
+屏蔽数据成员，需要声明一个同类型的成员并使用相同的名称。
+
+例如：
+```c#
+namespace SimpleExample
+{
+    class MyBaseClass
+    {
+        public string ClassText = "From base class.";
+    }
+
+    class MyDerivedClass : MyBaseClass
+    {
+        new public string ClassText = "Hide from derived class.";
+    }
+    
+    class Program
+    {
+        static void Main()
+        {
+            MyDerivedClass md = new MyDerivedClass();
+            Console.WriteLine(md.ClassText);
+        }
+    }
+}
+```
+
+屏蔽函数成员，在派生类中声明一个相同签名的函数成员。
+
+```c#
+namespace SimpleExample
+{
+    class MyBaseClass
+    {
+        public string classText = "base class text;";
+        public void ClassMethod(string value)
+        {
+            Console.WriteLine("Base class write: "+ value);
+        }
+    }
+
+    class MyDerivedClass : MyBaseClass
+    {
+        new public string classText = "hide from derived class text;";
+        new public void ClassMethod(string value)
+        {
+            Console.WriteLine("Derived class write: " + value);
+        }
+    }
+    
+    class Program
+    {
+        static void Main()
+        {
+            MyDerivedClass md = new MyDerivedClass();
+            md.ClassMethod(md.classText); //屏蔽基类访问
+        }
+    }
+}
+```
+
+输出：
+
+```cmd
+Derived class write: hide from derived class text;
+```
+
+### 基类访问 base access
+
+继续访问被隐藏的基类成员，可以在使用基类访问表达式，使用 base 关键字加成员名。
+
+例如：
+```c#
+namespace SimpleExample
+{
+    class MyBaseClass
+    {
+        public string ClssText = "base class text;";
+    }
+
+    class MyDerivedClass : MyBaseClass
+    {
+        new public string ClssText = "hide from derived class text;"; //屏蔽基类成员
+        public void PrintMethod()
+        {
+            Console.WriteLine(ClssText);
+            Console.WriteLine(base.ClssText); // 基类访问
+        }
+    }
+    
+    class Program
+    {
+        static void Main()
+        {
+            MyDerivedClass md = new MyDerivedClass();
+            md.PrintMethod();
+        }
+    }
+}
+```
+
+输出：
+
+```cmd
+hide from derived class text;
+base class text;
+```
