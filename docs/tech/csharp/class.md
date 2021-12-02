@@ -151,6 +151,8 @@ Derived class write: hide from derived class text;
 
 继续访问被隐藏的基类成员，可以在使用基类访问表达式，使用 base 关键字加成员名。
 
+尽量避免使用这个特性。
+
 例如：
 ```c#
 namespace SimpleExample
@@ -186,4 +188,55 @@ namespace SimpleExample
 ```cmd
 hide from derived class text;
 base class text;
+```
+
+### 虚方法和覆写
+
+当使用基类引用访问派生类对象时，得到的是基类的成员。虚方法可以使基
+类的引用访问“升至”派生类内。
+
+在基类方法前加上 `virtual` 关键字，表示虚方法。在派生类中加 `override` 表示覆写这个虚方法。
+
+例如：
+
+```c#
+namespace SimpleExample
+{
+    class MyBaseClass
+    {
+        virtual public void Print()
+        {
+            Console.WriteLine("Base class write.");
+        }
+    }
+
+    class MyDerivedClass : MyBaseClass
+    {
+        override public void Print()
+        {
+            Console.WriteLine("Derived class write.");
+        }
+    }
+    
+    class Program
+    {
+        static void Main()
+        {
+            MyDerivedClass md = new MyDerivedClass();
+            MyBaseClass bc = (MyBaseClass)md;
+            MyBaseClass bc2 = new MyBaseClass();
+            md.Print();
+            bc.Print();
+            bc2.Print();
+        }
+    }
+}
+```
+
+基类的方法被覆写，对基类的调用实际上调用了子类中的方法，输出：
+
+```cmd
+Derived class write.
+Derived class write.
+Base class write.
 ```
