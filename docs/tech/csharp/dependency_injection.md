@@ -1,31 +1,4 @@
-# C#
-
-Visual Studio 编译器 `csc`。
-
-WPF是 C#的 GUI 编写技术，使用 XAML 编写界面。
-
-编译发布： `dotnet publish -c Release -r win10-x64`
-
-## 类
-
-字段是类里面的变量。
-
-与C和cpp不同，c#在类型的外部不能声明全局变量（也就是变量或字段）。所有的**字段都属于类型**，而且必须在类型声明内部声明。
-同样的，c#中**没有全局函数（也就是方法或函数）**声明在类型声明的外部。
-
-### 访问修饰符：
-
-指定成员的访问级别。
-
-* private (默认)，只有类内部可访问。
-* public 可以被其他对象访问。
-* protected 只有类内部和类派生出的子类可以访问。
-* internal 只有程序集内的类可以访问。
-* protected internal == protected + internal 派生出的子类和程序集内的类可以访问。
-
-抽象成员
-
-### 依赖注入 Dependency Injection
+# 依赖注入 Dependency Injection
 
 当A类使用B类的某些功能时，则表示A类具有B类的依赖，然而，如果在A类内部实例化B类，会导致A类与B类耦合，导致程序不易维护。
 
@@ -61,7 +34,7 @@ public class Worker : BackgroundService
 控制反转是一种思想，依赖注入（Dependency Injection）是一种实现方法。通过第三方，把B类的构造函数注入到A类里，让A类直接使用，
 不需要实例化B类。
 
-#### C# 实现：
+## 代码实现
 
 定义一个 IMessageWriter 接口，在接口中实现 Write 方法。
 
@@ -129,12 +102,7 @@ public class Worker : BackgroundService
 }
 ```
 
-ref:
+## ref:
 * [浅谈控制反转与依赖注入 - 胡小国的文章 - 知乎](https://zhuanlan.zhihu.com/p/33492169)
 * C#代码例子：[Dependency injection in .NET | Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/core/extensions/dependency-injection)
 * [A quick intro to Dependency Injection: what it is, and when to use it](https://www.freecodecamp.org/news/a-quick-intro-to-dependency-injection-what-it-is-and-when-to-use-it-7578c84fa88f/)
-
-## 框架
-
-* web framework: [Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor)
-* backend framework: [Entity](https://docs.microsoft.com/en-us/ef/core/)
