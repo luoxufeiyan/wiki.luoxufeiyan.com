@@ -15,8 +15,10 @@
 * private (默认)，只有类内部可访问。
 * public 可以被其他对象访问。
 * protected 只有类内部和类派生出的子类可以访问。
-* internal 只有程序集内的类可以访问。
+* internal 只有程序集（assembly）内的类可以访问。
 * protected internal == protected + internal 派生出的子类和程序集内的类可以访问。
+
+ref: [Access Modifiers - C# Programming Guide | Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers)
 
 抽象成员
 
@@ -240,3 +242,14 @@ Derived class write.
 Derived class write.
 Base class write.
 ```
+
+
+## 结构
+
+结构与类相似，也包括数据成员和函数成员，与类最主要的区别是：
+
+* 结构不能被继承，（因为结构是隐式密封的）。
+* 类是引用类型，而结构是值类型：成例化后被存放在**栈**中。
+
+将一个结构体赋值给另一个结构体是，是在栈中开一块内存并将结构体的值完全复制到这块内存中，不是指针引用，类似 deep copy 。
+
