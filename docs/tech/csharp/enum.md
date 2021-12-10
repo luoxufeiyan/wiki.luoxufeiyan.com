@@ -39,3 +39,49 @@ Console.WriteLine("Your deck is {0} which has Single Deck is {1}", settings.ToSt
 
 输出：Your deck is 3 which has Single Deck is True
 
+另一种方法是通过逻辑与`&`来检查是否包含某个值，例如：
+
+```c#
+bool IsSingleDeckAlternative = (settings & CardDeckSettings.SingleDeck) == CardDeckSettings.SingleDeck;
+```
+
+### Flags 特性
+
+将枚举做为位标志时，在枚举类型前加上`[Flags]`可以告诉编译器位标志的特性，例如可以提供更多的格式化信息：
+
+不加Flags特性的枚举：
+
+```c#
+enum CardDeckSettings
+{
+    SingleDeck = 0x01,
+    LargePictures = 0x02,
+    FancyNumbers = 0x04,
+    Shuffle = 0x08,
+}
+
+...
+
+Console.WriteLine("Your deck is {0} ", settings.ToString());
+```
+
+输出：Your deck is 3
+
+添加Flags特性的枚举：
+
+```c#
+[Flags]
+enum CardDeckSettings
+{
+    SingleDeck = 0x01,
+    LargePictures = 0x02,
+    FancyNumbers = 0x04,
+    Shuffle = 0x08,
+}
+
+...
+
+Console.WriteLine("Your deck is {0} ", settings.ToString());
+```
+
+输出：Your deck is SingleDeck, LargePictures
