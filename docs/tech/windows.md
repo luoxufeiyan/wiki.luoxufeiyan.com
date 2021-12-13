@@ -3,6 +3,7 @@
 ## 常用软件：
   * [AnyTXT：搜索文件内的关键字](https://anytxt.net/)
   * [DriverPack: 驱动下载](https://driverpack.io/en)
+  * [Taskbar stats](https://github.com/openhoangnc/taskbar-stats/)
 
 
 ## 常见问题
