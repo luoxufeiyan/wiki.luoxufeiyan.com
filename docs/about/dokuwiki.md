@@ -1,4 +1,6 @@
-# 关于
+# Dokuwiki
+
+> 知识库已经从Dokuwiki改成了MkDocs，本页部分信息已经失效。
 
 
 知识库使用Dokuwiki搭建，GMO Cloud提供计算服务，支持`TLS1.3`访问。
