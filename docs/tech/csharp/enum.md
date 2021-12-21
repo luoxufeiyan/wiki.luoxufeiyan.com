@@ -85,3 +85,22 @@ Console.WriteLine("Your deck is {0} ", settings.ToString());
 ```
 
 输出：Your deck is SingleDeck, LargePictures
+
+对于大量的枚举值，当超过默认`uint`所代表的32位范围后，可以使用`ulong`来代替，注意将 1 替换为 1UL，比如：
+
+```c#
+[Flags]    
+    public enum EventType : ulong
+    {
+        f1= 1,
+        f2= 1 << 1,
+        f3= 1 << 2,
+        ......
+
+        f... = 1 << 30,
+        f... = 1UL << 31,
+        f...  = 1UL << 32        
+    }
+```
+
+ref: [Large flags enumerations in C# - Stack Overflow](https://stackoverflow.com/a/54901506/3886059)
