@@ -51,3 +51,32 @@ class Program
 }
 ```
 
+可以扩展BCL基础库中实现的接口，来实现自定义的功能，例如自定义类型MyClass希望实现Array.Sort方法，可以通过扩展 `ICompareable` 接口来实现对应的比较方法。
+
+```c#
+class MyClass : IComparable
+{
+    public int TheValue;
+    public int CompareTo(object? obj) // CompareTo是接口里声明的比较方法
+    {
+        MyClass mc = (MyClass) obj;
+        if (this.TheValue < mc.TheValue) return -1;
+        if (this.TheValue > mc.TheValue) return 1;
+        return 0;
+    }
+}
+```
+
+这样可以实现Array.Sort()方法：
+
+```c#
+MyClass[] myArr = new MyClass[5];
+Array.Sort(myArr);
+```
+
+## 声明接口
+
+除了实现BCL中的接口外，也可以自己声明接口。
+
+但声明接口不能包括数据成员或者静态成员。
+
