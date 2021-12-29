@@ -23,6 +23,21 @@ Console.WriteLine(sum);  // output: NaN
 
 ref: [?? and ??= operators - C# reference | Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/null-coalescing-operator)
 
+## Span
+
+```c#
+static void Main()
+{
+    var array = new byte[10];
+    Span<byte> bytes = array;
+    bytes = bytes.Slice(start: 2, length: 5);
+
+    bytes[0] = 5;
+    Console.WriteLine(array[2]);
+    Console.WriteLine(bytes[0]);
+}
+```
+
 ## 小抄速记
 
 快速对数组初始化同一个值： `byte[] arr1 = Enumerable.Repeat((byte)0x20,100).ToArray();` [ref](https://stackoverflow.com/questions/6150097/initialize-a-byte-array-to-a-certain-value-other-than-the-default-null)
