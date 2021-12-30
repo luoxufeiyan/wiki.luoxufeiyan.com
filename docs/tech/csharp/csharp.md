@@ -38,6 +38,22 @@ static void Main()
 }
 ```
 
+## XML 注释语法
+
+c# 使用XML注释语法，以 `///` 开头。
+
+### <inheritdoc>
+
+对于继承的类(override)，可以使用 `<inheritdoc>` 来自动生成跟父类一样的文档。
+
+```c#
+/// <inheritdoc />
+public override int CourseType { set; get; } = 12;
+```
+
+ref:
+* https://tunnelvisionlabs.github.io/SHFB/docs-master/SandcastleBuilder/html/79897974-ffc9-4b84-91a5-e50c66a0221d.htm
+* https://docs.microsoft.com/zh-cn/dotnet/csharp/language-reference/xmldoc/recommended-tags#inheritdoc
 ## 小抄速记
 
 快速对数组初始化同一个值： `byte[] arr1 = Enumerable.Repeat((byte)0x20,100).ToArray();` [ref](https://stackoverflow.com/questions/6150097/initialize-a-byte-array-to-a-certain-value-other-than-the-default-null)
