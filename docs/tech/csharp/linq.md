@@ -1,6 +1,6 @@
 # LINQ
 
-LINQ (link) 是一种通用的查询语言。
+LINQ (发音：link) 是一种通用的查询语言。
 
 ```c#
 static void Main()
