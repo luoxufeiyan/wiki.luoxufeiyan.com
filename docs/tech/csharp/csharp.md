@@ -38,6 +38,26 @@ static void Main()
 }
 ```
 
+## StringBuilder
+
+因为String类型是不可变的，所以在每次操作后，都需要分配新的内存。对于一些需要频繁修改的字符串，String的内存开销非常大，可以使用StringBuilder类来提高性能。
+
+StringBuilder可以修改字符串而不创建新的对象。
+
+创建时可以指定初始容量，如果不指定，则默认为16。
+
+```c#
+StringBuilder myStringBuilder = new StringBuilder("Hello World!");
+StringBuilder myStringBuilder2 = new StringBuilder("Hello World!", 20);
+StringBuilder myStringBuilder3 = new StringBuilder(20);
+```
+
+ref:
+
+* https://docs.microsoft.com/en-us/dotnet/standard/base-types/stringbuilder
+* https://blog.csdn.net/PEACE_FOREVER_1996/article/details/77726957
+
+
 ## XML 注释语法
 
 c# 使用XML注释语法，以 `///` 开头。
