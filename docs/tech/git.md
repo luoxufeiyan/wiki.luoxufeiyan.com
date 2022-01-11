@@ -71,9 +71,21 @@ ref:[Rename a local and remote branch in git](https://multiplestates.wordpress.c
 合并所有commit可以用`git merge`，当只需要特定的commit时，可以用`cherry pick`。
 
 用法：
-```
+```shell
 git cherry-pick <commitHash>
 ```
+
+### empty commit
+
+创建空提交。
+
+```shell
+git commit --allow-empty -m "Trigger Build"
+```
+
+### 撤销远程修改
+
+即便commit已经推送到远程，依然可以用revert的方法将远程的提交删除。
 
 ## 快捷键
 

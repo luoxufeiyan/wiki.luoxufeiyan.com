@@ -58,6 +58,21 @@ ref:
 * https://blog.csdn.net/PEACE_FOREVER_1996/article/details/77726957
 
 
+## class vs struct
+
+类与结构体的不同。
+
+
+|Class|Struct |
+|--|--|
+|Reference types (on heap)  |value types (on stack) |
+|Can have constructor and destructor| No constructor destructor|
+|can have null type|cannot have null type|
+
+ref:
+
+* https://stackoverflow.com/questions/13049/whats-the-difference-between-struct-and-class-in-net
+
 ## XML 注释语法
 
 c# 使用XML注释语法，以 `///` 开头。
