@@ -19,3 +19,10 @@ ref: [https://weblog.west-wind.com/posts/2017/jan/25/adding-files-to-visual-stud
 ## Plugins
 
 * format code on save: [Code Cleanup On Save - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.CodeCleanupOnSave)
+
+* create new file
+
+## 单线程调试方法
+
+![vs_debug_threads.png](vs_debug_threads.png)
+在调试-线程中，全选并冻结所有线程，然后只对一个线程解封。
