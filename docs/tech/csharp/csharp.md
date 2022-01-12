@@ -89,6 +89,39 @@ public override int CourseType { set; get; } = 12;
 ref:
 * https://tunnelvisionlabs.github.io/SHFB/docs-master/SandcastleBuilder/html/79897974-ffc9-4b84-91a5-e50c66a0221d.htm
 * https://docs.microsoft.com/zh-cn/dotnet/csharp/language-reference/xmldoc/recommended-tags#inheritdoc
+
+### out 关键字
+
+使用 out 关键字可以使参数按照引用（原变量）来传递，而不是在传入参数时创建一个参数的拷贝。
+
+利用 out 可以间接实现一个函数返回多个类型的值。
+
+例如求最大最小值是int类型，平均值是double类型，使用out可以一次性返回这些值。
+
+out 关键字与 ref 关键字类似，但out不必在调用前初始化。
+
+```c#
+static readonly List<int> _arr = new List<int> { 1, 4, 2, 5, 6, 7, 9, 2, 5 };
+
+static void Main()
+{
+    
+    int min, max;
+    double avg;
+    CalcArr(out min, out max, out avg);
+    Console.WriteLine("Min {0}, max {1}, avg {2}", min, max, avg);
+}
+
+static void CalcArr(out int min, out int max, out double avg)
+{
+    min = _arr.Min();
+    max = _arr.Max();
+    avg = _arr.Average();
+}
+```
+
+
+
 ## 小抄速记
 
 快速对数组初始化同一个值： `byte[] arr1 = Enumerable.Repeat((byte)0x20,100).ToArray();` [ref](https://stackoverflow.com/questions/6150097/initialize-a-byte-array-to-a-certain-value-other-than-the-default-null)
