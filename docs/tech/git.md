@@ -93,7 +93,7 @@ git commit --allow-empty -m "Trigger Build"
 
 ## git 常用编写
 
-* feat: 添加新特性、新功能（ feature ）
+* feat: 添加新特性、新功能 (feature)
 * fix: 修复 bug
 * docs: 仅仅修改了文档
 * style: 仅仅修改了空格、格式缩进、逗号等等，不改变代码逻辑
