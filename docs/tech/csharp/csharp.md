@@ -2,14 +2,13 @@
 
 Visual Studio 编译器 `csc`。
 
-WPF是 C#的 GUI 编写技术，使用 XAML 编写界面。
+WPF 是 C#的 GUI 编写技术，使用 XAML 编写界面。
 
 编译发布： `dotnet publish -c Release -r win10-x64`
 
-
 ## 空安全 null safety
 
-c# 支持 空判断 `??` 运算符，当运算符左侧为null时，执行运算符右侧的代码。
+c# 支持 空判断 `??` 运算符，当运算符左侧为 null 时，执行运算符右侧的代码。
 
 ```c#
 double SumNumbers(List<double[]> setsOfNumbers, int indexOfSetToSum)
@@ -21,7 +20,7 @@ var sum = SumNumbers(null, 0);
 Console.WriteLine(sum);  // output: NaN
 ```
 
-`??=` 运算符当左侧为null时，赋值右侧的值。
+`??=` 运算符当左侧为 null 时，赋值右侧的值。
 
 ```c#
 List<int> numbers = null;
@@ -54,11 +53,11 @@ static void Main()
 
 ## StringBuilder
 
-因为String类型是不可变的，所以在每次操作后，都需要分配新的内存。对于一些需要频繁修改的字符串，String的内存开销非常大，可以使用StringBuilder类来提高性能。
+因为 String 类型是不可变的，所以在每次操作后，都需要分配新的内存。对于一些需要频繁修改的字符串，String 的内存开销非常大，可以使用 StringBuilder 类来提高性能。
 
-StringBuilder可以修改字符串而不创建新的对象。
+StringBuilder 可以修改字符串而不创建新的对象。
 
-创建时可以指定初始容量，如果不指定，则默认为16。
+创建时可以指定初始容量，如果不指定，则默认为 16。
 
 ```c#
 StringBuilder myStringBuilder = new StringBuilder("Hello World!");
@@ -68,28 +67,26 @@ StringBuilder myStringBuilder3 = new StringBuilder(20);
 
 ref:
 
-* https://docs.microsoft.com/en-us/dotnet/standard/base-types/stringbuilder
-* https://blog.csdn.net/PEACE_FOREVER_1996/article/details/77726957
-
+- https://docs.microsoft.com/en-us/dotnet/standard/base-types/stringbuilder
+- https://blog.csdn.net/PEACE_FOREVER_1996/article/details/77726957
 
 ## class vs struct
 
 类与结构体的不同。
 
-
-|Class|Struct |
-|--|--|
-|Reference types (on heap)  |value types (on stack) |
-|Can have constructor and destructor| No constructor destructor|
-|can have null type|cannot have null type|
+| Class                               | Struct                    |
+| ----------------------------------- | ------------------------- |
+| Reference types (on heap)           | value types (on stack)    |
+| Can have constructor and destructor | No constructor destructor |
+| can have null type                  | cannot have null type     |
 
 ref:
 
-* https://stackoverflow.com/questions/13049/whats-the-difference-between-struct-and-class-in-net
+- https://stackoverflow.com/questions/13049/whats-the-difference-between-struct-and-class-in-net
 
 ## XML 注释语法
 
-c# 使用XML注释语法，以 `///` 开头。
+c# 使用 XML 注释语法，以 `///` 开头。
 
 ### <inheritdoc>
 
@@ -101,8 +98,9 @@ public override int CourseType { set; get; } = 12;
 ```
 
 ref:
-* https://tunnelvisionlabs.github.io/SHFB/docs-master/SandcastleBuilder/html/79897974-ffc9-4b84-91a5-e50c66a0221d.htm
-* https://docs.microsoft.com/zh-cn/dotnet/csharp/language-reference/xmldoc/recommended-tags#inheritdoc
+
+- https://tunnelvisionlabs.github.io/SHFB/docs-master/SandcastleBuilder/html/79897974-ffc9-4b84-91a5-e50c66a0221d.htm
+- https://docs.microsoft.com/zh-cn/dotnet/csharp/language-reference/xmldoc/recommended-tags#inheritdoc
 
 ### out 关键字
 
@@ -110,16 +108,16 @@ ref:
 
 利用 out 可以间接实现一个函数返回多个类型的值。
 
-例如求最大最小值是int类型，平均值是double类型，使用out可以一次性返回这些值。
+例如求最大最小值是 int 类型，平均值是 double 类型，使用 out 可以一次性返回这些值。
 
-out 关键字与 ref 关键字类似，但out不必在调用前初始化。
+out 关键字与 ref 关键字类似，但 out 不必在调用前初始化。
 
 ```c#
 static readonly List<int> _arr = new List<int> { 1, 4, 2, 5, 6, 7, 9, 2, 5 };
 
 static void Main()
 {
-    
+
     int min, max;
     double avg;
     CalcArr(out min, out max, out avg);
@@ -134,13 +132,15 @@ static void CalcArr(out int min, out int max, out double avg)
 }
 ```
 
-
-
 ## 小抄速记
 
 快速对数组初始化同一个值： `byte[] arr1 = Enumerable.Repeat((byte)0x20,100).ToArray();` [ref](https://stackoverflow.com/questions/6150097/initialize-a-byte-array-to-a-certain-value-other-than-the-default-null)
 
 ## 框架
 
-* web framework: [Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor)
-* backend framework: [Entity](https://docs.microsoft.com/en-us/ef/core/)
+- web framework: [Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor)
+- backend framework: [Entity](https://docs.microsoft.com/en-us/ef/core/)
+
+## ref
+
+- 单元测试：https://docs.microsoft.com/en-us/visualstudio/test/walkthrough-creating-and-running-unit-tests-for-managed-code?view=vs-2022
