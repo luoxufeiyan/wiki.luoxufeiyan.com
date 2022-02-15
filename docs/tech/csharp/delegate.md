@@ -4,7 +4,6 @@
 
 类表示的是数据和方法的集合，而委托表示的是一个或多个的方法。
 
-
 声明委托时确定参数和返回类型，比如 `public delegate int MyDelegate(int x, int y);` 可以用来委托任意一个传入两个整形并返回一个整形的方法。
 
 实例化对象同样需要 `new` 关键字，并传入需要委托的函数名。
@@ -83,7 +82,7 @@ Console.WriteLine("x: {0}", x); // x: 3
 
 ### 匿名方法
 
-可以通过delegate来写匿名方法，匿名方法的返回值与委托的类型一致。
+可以通过 delegate 来写匿名方法，匿名方法的返回值与委托的类型一致。
 
 ```c#
 delegate int OtherDel(int InParam);
@@ -94,10 +93,9 @@ public void AnonymousMethod()
 }
 ```
 
+### Lambda 表达式
 
-### Lambda表达式
-
-上面的匿名方法可以写成Lambda表达式。
+上面的匿名方法可以写成 Lambda 表达式。
 
 ```c#
 OtherDel del = delegate (int x) { return x += 20; };
