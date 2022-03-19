@@ -94,6 +94,10 @@ git commit --allow-empty -m "Trigger Build"
 
 即便 commit 已经推送到远程，依然可以用 revert 的方法将远程的提交删除。
 
+### 撤销本地的最后一次 commit
+
+`git reset --hard HEAD~1`
+
 ## 快捷键
 
 [[https://gist.github.com/hutusi/e4f32e2bcd8d53ec86de8254ab0d5127|Git paging]]
