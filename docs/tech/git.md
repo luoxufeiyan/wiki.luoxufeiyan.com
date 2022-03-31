@@ -7,6 +7,12 @@ git config --local user.name "Hugh Gao"
 git config --local user.email "admin@luoxufeiyan.com"
 ```
 
+使用代理：
+
+```shell
+git config --local http.proxy socks5h://127.0.0.1:1080
+```
+
 ## SSH 连接 Git
 
 1. 启用身份验证
