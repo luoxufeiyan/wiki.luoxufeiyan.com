@@ -1,6 +1,9 @@
 # Git
 
-为每一个 repo 设立不同的 config。文件会被放在 .git/config 中，只对当前 repo 有效。
+- `--local` : 为每一个 repo 设立不同的 config。文件会被放在 .git/config 中，只对当前 repo 有效。
+- `--global` : 设置为全局，对所有仓库生效。
+
+设置用户：
 
 ```shell
 git config --local user.name "Hugh Gao"
