@@ -4,6 +4,7 @@
   * [AnyTXT：搜索文件内的关键字](https://anytxt.net/)
   * [DriverPack: 驱动下载](https://driverpack.io/en)
   * [Taskbar stats](https://github.com/openhoangnc/taskbar-stats/)
+  * [SpaceSniffer： 分析文件体积](http://www.uderzo.it/main_products/space_sniffer/)
 
 
 ## 常见问题
