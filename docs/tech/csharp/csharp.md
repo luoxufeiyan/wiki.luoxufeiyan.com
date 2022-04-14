@@ -141,6 +141,10 @@ static void CalcArr(out int min, out int max, out double avg)
 - web framework: [Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor)
 - backend framework: [Entity](https://docs.microsoft.com/en-us/ef/core/)
 
+## 交互式编程
+
+将 C# 安装至 jupyter，实现交互式编程：[Using .NET notebooks with Jupyter Notebook / JupyterLab](https://github.com/dotnet/interactive/blob/main/docs/NotebookswithJupyter.md)
+
 ## ref
 
 - 单元测试：https://docs.microsoft.com/en-us/visualstudio/test/walkthrough-creating-and-running-unit-tests-for-managed-code?view=vs-2022
