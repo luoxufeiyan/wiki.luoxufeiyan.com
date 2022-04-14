@@ -141,9 +141,24 @@ static void CalcArr(out int min, out int max, out double avg)
 - web framework: [Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor)
 - backend framework: [Entity](https://docs.microsoft.com/en-us/ef/core/)
 
-## 交互式编程
+## Jupyter 交互式编程
 
 将 C# 安装至 jupyter，实现交互式编程：[Using .NET notebooks with Jupyter Notebook / JupyterLab](https://github.com/dotnet/interactive/blob/main/docs/NotebookswithJupyter.md)
+
+### Import package
+
+import from NuGet: `#r "nuget:<package name>,<package version>"`
+
+can be found in NuGet package page, under **Script & Interactive** tab.
+
+eg:
+
+```c#
+#r "nuget: morelinq, 3.3.2"
+using MoreLinq;
+```
+
+ref: https://devblogs.microsoft.com/dotnet/net-core-with-juypter-notebooks-is-here-preview-1/
 
 ## ref
 
