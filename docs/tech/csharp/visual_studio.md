@@ -58,4 +58,5 @@ TcpClient<***.***.72.49:9000-***.***.79.199:9000>: Information: OpenFailed
 
 ### ref
 
-* https://developercommunity.visualstudio.com/t/cannot-run-in-debug-mode/281320
+* [Cannot run in debug mode - Visual Studio Feedback](https://developercommunity.visualstudio.com/t/cannot-run-in-debug-mode/281320)
+* [JIT 优化和调试 - Visual Studio (Windows) | Microsoft Docs](https://docs.microsoft.com/zh-cn/visualstudio/debugger/jit-optimization-and-debugging?view=vs-2022)
