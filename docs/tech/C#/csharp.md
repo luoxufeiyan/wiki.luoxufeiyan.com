@@ -102,15 +102,93 @@ ref:
 - https://tunnelvisionlabs.github.io/SHFB/docs-master/SandcastleBuilder/html/79897974-ffc9-4b84-91a5-e50c66a0221d.htm
 - https://docs.microsoft.com/zh-cn/dotnet/csharp/language-reference/xmldoc/recommended-tags#inheritdoc
 
+### ref
+
+> 在C#中，方法的参数传递有四种类型：传值（by value），传址（by reference），输出参数（by output），数组参数（by array）。
+> 传值参数无需额外的修饰符，传址参数需要修饰符ref，输出参数需要修饰符out，数组参数需要修饰符params。
+> 传值参数在方法调用过程中如果改变了参数的值，那么传入方法的参数在方法调用完成以后并不因此而改变，而是保留原来传入时的值。
+> 传址参数恰恰相反，如果方法调用过程改变了参数的值，那么传入方法的参数在调用完成以后也随之改变。
+> 实际上从名称上我们可以清楚地看出两者的含义--传值参数传递的是调用参数的一份拷贝，而传址参数传递的是调用参数的内存地址，该参数在方法内外指向的是同一个存储位置。
+
+
+带 ref 的参数会在方法执行完后改变参数的值(因为传递的是地址)。
+
+例：
+
+```c#
+static void Test()
+{
+    string s1 = "Good Luck!";
+    TestRef(ref s1);
+    Console.WriteLine(s1);//output: Hello World!
+}
+
+static void TestRef(ref string str)
+{
+    str = "Hello World!";
+}
+```
+
+**传递到 ref 参数的参数必须初始化,否则程序会报错**
+
+因为 ref 实际是在传**地址**，需要初始化变量。
+
+```c#
+static void Test()
+{
+    string s1;
+    TestRef(ref s1);
+    Console.WriteLine(s1);//Use of unassigned parameter
+}
+
+static void TestRef(ref string str)
+{
+    str = "Hello World!";
+}
+```
+
 ### out 关键字
 
 使用 out 关键字可以使参数按照引用（原变量）来传递，而不是在传入参数时创建一个参数的拷贝。
 
+out 关键字与 ref 关键字类似，但 out 不必在调用前初始化。
+
+```c#
+static void Test()
+{
+    string s1;
+    TestOut(out s1);
+    Console.WriteLine(s1);
+}
+
+static void TestOut(out string str)
+{
+    str = "Hello World!";
+}
+```
+
+out关键字无法将参数的值传入方法中，（只传递的是方法的引用）。在使用 out 的变量时，初始化必须要在方法的内部进行，否则程序会报错。
+
+```c#
+static void Test()
+{
+    string s1; // 这里赋值也会报错，需要在方法内赋值
+    TestOut(out s1);
+    
+}
+
+static void TestOut(out string str)
+{
+    Console.WriteLine(str);//Use of unassigned parameter
+    str = "Hello World!";
+}
+```
+
+#### 使用
+
 利用 out 可以间接实现一个函数返回多个类型的值。
 
 例如求最大最小值是 int 类型，平均值是 double 类型，使用 out 可以一次性返回这些值。
-
-out 关键字与 ref 关键字类似，但 out 不必在调用前初始化。
 
 ```c#
 static readonly List<int> _arr = new List<int> { 1, 4, 2, 5, 6, 7, 9, 2, 5 };
