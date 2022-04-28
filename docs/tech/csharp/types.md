@@ -1,4 +1,4 @@
-# 类型、存储与变量 types storage and variables
+# 类型 types
 
 ## 值类型和引用类型
 
@@ -14,3 +14,4 @@
 ref: 
 * Illustrated C# 2012 (Expert's Voice in .NET) [Solis, Daniel]
 * [Types - C# language specification | Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/types#value-types)
+* [【推荐】C# Types - YouTube](https://www.youtube.com/playlist?list=PLRwVmtr-pp07XP8UBiUJ0cyORVCmCgkdA)
