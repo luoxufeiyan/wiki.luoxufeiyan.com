@@ -1,5 +1,7 @@
 # Windows
 
+导出本机全部的IP地址以及配置信息： `netsh -c interface dump > network_config.txt`
+
 ## 常用软件：
   * [AnyTXT：搜索文件内的关键字](https://anytxt.net/)
   * [DriverPack: 驱动下载](https://driverpack.io/en)
