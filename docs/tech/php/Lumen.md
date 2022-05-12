@@ -1,6 +1,6 @@
 # Lumen
 
-Lumen is a Laraverl based micro-framework.
+Lumen is a Laravel based micro-framework.
 
 ## quicknote
 
