@@ -9,4 +9,5 @@
 ## 资料
 
 * [花花酱 Hua Hua - YouTube](https://www.youtube.com/user/xxfflower)
+* [LeetCode 解题笔记 - GitHub Pages](https://diguage.github.io/leetcode/)
 * [开篇词 - labuladong的算法小抄](https://labuladong.gitbook.io/algo/)
