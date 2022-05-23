@@ -10,4 +10,4 @@
 
 - [Back To Back SWE](https://www.youtube.com/channel/UCmJz2DV1a3yfgrR7GqRtUUA)
 - [花花酱 Hua Hua - YouTube](https://www.youtube.com/user/xxfflower)
-- [开篇词 - labuladong 的算法小抄](https://labuladong.gitbook.io/algo/)
+- [开篇词 - labuladong 的算法小抄](https://labuladong.github.io/algo)
