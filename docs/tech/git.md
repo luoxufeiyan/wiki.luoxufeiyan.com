@@ -107,9 +107,6 @@ git commit --allow-empty -m "Trigger Build"
 
 `git reset --hard HEAD~1`
 
-## 快捷键
-
-[[https://gist.github.com/hutusi/e4f32e2bcd8d53ec86de8254ab0d5127|Git paging]]
 
 ## git 常用编写
 
@@ -121,3 +118,6 @@ git commit --allow-empty -m "Trigger Build"
 - perf: 增加代码进行性能测试
 - test: 增加测试用例
 - chore: 改变构建流程、或者增加依赖库、工具等
+
+## Links
+* [Git alias](https://gist.github.com/hutusi/e4f32e2bcd8d53ec86de8254ab0d5127)
