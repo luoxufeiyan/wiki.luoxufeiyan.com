@@ -46,7 +46,7 @@ ssh -T git@github.com
 
 ## 添加远程仓库
 
-```
+```shell
 git remote -v
 git remote remove origin
 git remote add origin git@github.com:user/repo.git
@@ -56,25 +56,25 @@ git remote add origin git@github.com:user/repo.git
 
 本地分支重命名：
 
-```
+```shell
 git branch -m old-name new-name
 ```
 
 删除旧远程分支，推送新本地分支：
 
-```
+```shell
 git push origin :old-name new-name
 ```
 
 设置 upstream 为新分支：
 
-```
+```shell
 git push origin -u new-name
 ```
 
 ⚠️ 舍弃本地修改，从远程拉取。
 
-```
+```shell
 git reset --hard origin/master
 git pull origin master
 ```
@@ -105,7 +105,9 @@ git commit --allow-empty -m "Trigger Build"
 
 ### 撤销本地的最后一次 commit
 
-`git reset --hard HEAD~1`
+```shell
+git reset --hard HEAD~1
+```
 
 
 ## git 常用编写
