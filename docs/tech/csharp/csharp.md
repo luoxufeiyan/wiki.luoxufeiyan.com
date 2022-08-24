@@ -36,20 +36,7 @@ Console.WriteLine(a);  // output: 0
 
 ref: [?? and ??= operators - C# reference | Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/null-coalescing-operator)
 
-## Span
 
-```c#
-static void Main()
-{
-    var array = new byte[10];
-    Span<byte> bytes = array;
-    bytes = bytes.Slice(start: 2, length: 5);
-
-    bytes[0] = 5;
-    Console.WriteLine(array[2]);
-    Console.WriteLine(bytes[0]);
-}
-```
 
 ## StringBuilder
 
