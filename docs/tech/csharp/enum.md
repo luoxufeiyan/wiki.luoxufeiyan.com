@@ -103,4 +103,23 @@ Console.WriteLine("Your deck is {0} ", settings.ToString());
     }
 ```
 
+### 查看值是否在Enum中
+
+C#的枚举在转换时默认不检查值是否已经在枚举中定义，即使是未定义的值也可以转换成枚举类型，但不会匹配到枚举值。
+
+[Enum.IsDefined](https://docs.microsoft.com/en-us/dotnet/api/system.enum.isdefined?view=net-6.0) 方法可以检查值是否在枚举中定义。
+
+eg:
+
+```c#
+public enum Waypoints
+{
+    A,
+    B,
+    C
+}
+
+Enum.IsDefined(typeof(Waypoints), 3); // False
+```
+
 ref: [Large flags enumerations in C# - Stack Overflow](https://stackoverflow.com/a/54901506/3886059)
