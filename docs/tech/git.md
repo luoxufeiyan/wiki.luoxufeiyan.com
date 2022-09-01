@@ -16,6 +16,12 @@ git config --local user.email "admin@luoxufeiyan.com"
 git config --local http.proxy socks5h://127.0.0.1:1080
 ```
 
+在克隆时使用代理：
+
+```shell
+git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git --config "http.proxy=proxyHost:proxyPort"
+```
+
 ## SSH 连接 Git
 
 1. 启用身份验证
