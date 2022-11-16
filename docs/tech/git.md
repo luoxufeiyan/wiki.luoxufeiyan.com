@@ -95,6 +95,8 @@ git pull origin master
 
 ref:[Rename a local and remote branch in git](https://multiplestates.wordpress.com/2015/02/05/rename-a-local-and-remote-branch-in-git/)
 
+## 小抄速记
+
 ### Cherry pick 从某一分支拉取特定的 commit 文件
 
 合并所有 commit 可以用`git merge`，当只需要特定的 commit 时，可以用`cherry pick`。
@@ -105,7 +107,7 @@ ref:[Rename a local and remote branch in git](https://multiplestates.wordpress.c
 git cherry-pick <commitHash>
 ```
 
-### empty commit
+### empty commit 空提交
 
 创建空提交。
 
@@ -123,6 +125,22 @@ git commit --allow-empty -m "Trigger Build"
 git reset --hard HEAD~1
 ```
 
+### Merge 2 repo 合并两个仓库
+
+如果两个仓库的历史记录不一致，需要合并两个仓库，基本方法是在新仓库上添加旧仓库做为远程，然后通过 merge 来合并两个仓库。
+
+例如将 project-old 合并到 project-new ：
+
+
+```shell
+cd path/to/project-new # 先进入新仓库
+git remote add project-old /path/to/project-old # 添加旧仓库为远程
+git fetch project-old --tags # 拉取旧仓库的所有 tag
+git merge --allow-unrelated-histories project-old/master # 通过 merge 将旧仓库的 master 分支合并入新仓库
+git remote remove project-old # 删除旧仓库的远程
+```
+
+ref: [How to merge two git repositories?](https://stackoverflow.com/questions/1425892/how-to-merge-two-git-repositories)
 
 ## git 常用编写
 
