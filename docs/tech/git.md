@@ -125,7 +125,7 @@ git commit --allow-empty -m "Trigger Build"
 git reset --hard HEAD~1
 ```
 
-### Merge 2 repo 合并两个仓库
+### Merge two git repositories 合并两个仓库
 
 如果两个仓库的历史记录不一致，需要合并两个仓库，基本方法是在新仓库上添加旧仓库做为远程，然后通过 merge 来合并两个仓库。
 
