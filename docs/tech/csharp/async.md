@@ -24,6 +24,38 @@ Task<int> 是一个异步操作的占位符对象，他会在异步方法中立�
 * 异步方法的参数不能为 out 或者 ref 关键字。
 * 按照惯例，异步方法的名称以 Async 结尾。
 
+## 返回类型
+
+异步方法的返回类型可以是 void、Task、Task<T> 三种类型。
+
+### Task<T> 类型
+
+如果想要异步方法返回一个值，可以使用 Task<T> 类型，其中 T 为返回值的类型。调用方法通过task的Result属性来获取返回值。
+
+返回值必须是T类型，或者可以隐式转换为T类型。
+
+```c#
+Task<int> value = CalculateSumAsync(1, 2);
+Console.WriteLine(value.Result); 
+```
+
+### Task 类型
+
+如果异步方法不需要返回值，但是需要检查这个方法的执行状态。可以使用 Task 类型。调用方法通过task的Wait()方法来等待异步方法执行完成。
+
+即使异步方法中有return 语句，也不会返回值。
+
+```c#
+Task myTask = CalculateSumAsync(1, 2);
+myTask.Wait();
+```
+
+### void 类型
+
+如果只想执行一个异步方法，不需要返回值，也不需要检查执行状态，可以使用 void 类型（调用并忘记 fire and forget）。
+
+即使异步方法中有return 语句，也不会返回值。
+
 ### ref
 
 - [https://github.com/davidfowl/AspNetCoreDiagnosticScenarios/blob/master/AsyncGuidance.md](https://github.com/davidfowl/AspNetCoreDiagnosticScenarios/blob/master/AsyncGuidance.md)
