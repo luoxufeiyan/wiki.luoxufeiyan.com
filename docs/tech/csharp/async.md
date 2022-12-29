@@ -56,6 +56,15 @@ myTask.Wait();
 
 即使异步方法中有return 语句，也不会返回值。
 
+## 控制流
+
+在异步方法中，遇到第一个 await 关键字之前的部分会同步执行（在调用处阻塞）。
+
+在遇到 await 关键字时，如果返回类型为 Task 或者 Task<T>，会产生一个Task类型的对象，然后立刻返回到调用方法处，异步方法继续执行，完成 await 关键字下面的工作（可能还有其他 await 语句），然后遇到 return 语句，更新Task的属性，退出。
+
+
+
+
 ### ref
 
 - [https://github.com/davidfowl/AspNetCoreDiagnosticScenarios/blob/master/AsyncGuidance.md](https://github.com/davidfowl/AspNetCoreDiagnosticScenarios/blob/master/AsyncGuidance.md)
