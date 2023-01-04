@@ -12,6 +12,7 @@
 ![storing_data_that_is_not_part_of_another_type](storing_data_that_is_not_part_of_another_type.png)
 
 ref: 
+
 * Illustrated C# 2012 (Expert's Voice in .NET) [Solis, Daniel]
 * [Types - C# language specification | Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/types#value-types)
 * [【推荐】C# Types - YouTube](https://www.youtube.com/playlist?list=PLRwVmtr-pp07XP8UBiUJ0cyORVCmCgkdA)
