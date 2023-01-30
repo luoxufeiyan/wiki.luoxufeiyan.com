@@ -10,6 +10,25 @@ git config --local user.name "Hugh Gao"
 git config --local user.email "admin@luoxufeiyan.com"
 ```
 
+Git 状态
+
+Git 的三个分区： working directory, stage area (index area), HEAD (commits).
+
+* working directory 指的是文件夹中实际能看到的文件。
+* stage 指的是通过 `add` 命令添加进入的暂存区。
+* HEAD 是当 stage 存在修改时，通过 `commit` 命令添加进入的 Git 历史区，自此修改会被 Git 存档。HEAD 指的是 Git 的 `HEAD` 指针指向的位置。
+
+working directory 与 stage 的改动可以通过 `git status` 命令查看， HEAD 的改动可以通过 `git log` 查看。
+
+状态转移图：
+
+![Git State Transform Diagram](git-std.png)
+
+
+ref: [我用四个命令概括了 Git 的所有套路 :: labuladong的算法小抄](https://labuladong.github.io/algo/di-si-zhan-4baf4/wo-yong-si-ad48a/)
+
+## 新建与克隆
+
 ### 代理
 
 使用代理：
@@ -30,7 +49,7 @@ git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git --con
 git config --local --unset http.proxy  
 ```
 
-## SSH 连接 Git
+#### SSH 连接 Git
 
 1. 启用身份验证
 
@@ -58,7 +77,7 @@ Host github.com
 ssh -T git@github.com
 ```
 
-## 添加远程仓库
+### 添加远程仓库
 
 ```shell
 git remote -v
@@ -66,7 +85,34 @@ git remote remove origin
 git remote add origin git@github.com:user/repo.git
 ```
 
-## 分支重命名
+## 分支
+
+创建分支： `git branch <name>`
+
+切换分支： `git checkout <name>` 。切换分支后，Git会将工作目录改动到当前的分支上。
+
+创建分支并立刻切换到这个分支： `git checkout -b <name>` 
+
+删除分支： `git branch -d <name>` 。如果分支没有被合并，Git默认会给出确认提示。
+
+
+#### 删除远程分支
+
+```shell
+$ git push <remote_name> --delete <branch_name>
+eg: git push origin --delete test
+```
+
+或者更简便的：
+
+```shell
+$ git push <remote_name> :<branch_name>
+eg: git push origin :test
+```
+
+ref: [version control - How do I delete a Git branch locally and remotely? - Stack Overflow](https://stackoverflow.com/a/2003515)
+
+### 分支重命名
 
 本地分支重命名：
 
@@ -155,3 +201,4 @@ ref: [How to merge two git repositories?](https://stackoverflow.com/questions/14
 
 ## Links
 * [Git alias](https://gist.github.com/hutusi/e4f32e2bcd8d53ec86de8254ab0d5127)
+* [Oh Shit, Git!?! 在使用 git 时的一些尴尬场景里的修复方案](https://ohshitgit.com/)
