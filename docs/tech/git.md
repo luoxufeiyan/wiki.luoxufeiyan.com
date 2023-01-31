@@ -100,15 +100,17 @@ git remote add origin git@github.com:user/repo.git
 
 ```shell
 $ git push <remote_name> --delete <branch_name>
-eg: git push origin --delete test
 ```
+
+例如： `git push origin --delete test`
 
 或者更简便的：
 
 ```shell
 $ git push <remote_name> :<branch_name>
-eg: git push origin :test
 ```
+
+例如： `git push origin :test`
 
 ref: [version control - How do I delete a Git branch locally and remotely? - Stack Overflow](https://stackoverflow.com/a/2003515)
 
@@ -202,3 +204,4 @@ ref: [How to merge two git repositories?](https://stackoverflow.com/questions/14
 ## Links
 * [Git alias](https://gist.github.com/hutusi/e4f32e2bcd8d53ec86de8254ab0d5127)
 * [Oh Shit, Git!?! 在使用 git 时的一些尴尬场景里的修复方案](https://ohshitgit.com/)
+* [Flight rules for Git Git 飞行手册](https://github.com/k88hudson/git-flight-rules)
