@@ -62,7 +62,32 @@ myTask.Wait();
 
 在遇到 await 关键字时，如果返回类型为 Task 或者 Task<T>，会产生一个Task类型的对象，然后立刻返回到调用方法处，异步方法继续执行，完成 await 关键字下面的工作（可能还有其他 await 语句），然后遇到 return 语句，更新Task的属性，退出。
 
+## Task.Run()
 
+Task.Run() 会在不同的线程中执行异步方法，而不是在当前线程中执行。
+
+在默认情况下，Task 使用线程池中的线程来执行。线程池是一组预先创建的线程，可以重复使用以执行多个任务。如果线程池中有可用的线程，则 Task 可能会在其中的某个线程上执行。如果线程池中没有可用的线程，则会创建新的线程来执行 Task。
+
+Task.Run() 需要传入一个 Func<T> 的委托，返回值为 T 类型。
+
+```C#
+public int Get10()
+{
+    return 10;
+}
+
+Func<int> ten = new Func<int>(Get10);
+
+int a = await Task.Run(ten);
+
+int b = await Task.Run(() => Get10());
+
+int c = await Task.Run(() => {return 10;});
+
+Console.WriteLine($"a:{a}, b:{b}, c:{c}");
+
+// a:10, b:10, c:10
+```
 
 
 ### ref
