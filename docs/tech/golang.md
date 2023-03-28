@@ -21,14 +21,16 @@ var b int // int default value: 0
 
 2. Go 还可以根据赋值来判断出变量类型，比如： `var c = false`
 
-3. 使用简短变量声明运算符 `:= `。
+3. 使用简短变量声明运算符 [Short variable declarations](https://go.dev/ref/spec#Short_variable_declarations) `:= `。
 
 
+```go
+package main
 
+import "fmt"
 
-它有一些限制:
-
-只能在函数内使用,不能在包级声明变量
-不能用于声明变量的类型是一个 interface type
-不能用于声明变量有匿名函数或切片/映射文本形式的初始值
-不能用于声明与 if, for 或 switch 一起的变量
+func main() {
+	y := 1
+	fmt.Println(y)
+}
+```
