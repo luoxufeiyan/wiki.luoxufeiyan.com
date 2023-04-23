@@ -1,6 +1,6 @@
 # Event 事件
 
-当一个事件注册多个 Handler 时，事件的触发顺序是不确定的。
+当一个事件注册多个 Handler 时，事件的触发顺序是不确定的。这取决于编译器的实现，以及 Handler 的执行时间。
 
 ```C#
 
@@ -41,4 +41,9 @@ public class EventExample
 		MyEvent?.Invoke(this, EventArgs.Empty);
 	}
 }
+
+// Output
+// First handler called, 2023/4/23 13:44:10
+// Second handler called, 2023/4/23 13:44:10
+// Third handler called, 2023/4/23 13:44:15
 ```
