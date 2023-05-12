@@ -66,3 +66,55 @@ ref:
 
 * https://stackoverflow.com/a/1922230
 * https://github.com/dotnet/wpf/issues/438
+
+## Binding
+
+在WPF中，通过ItemSource的方式可以为控件绑定数据。
+
+例如要在ListView中展示一个 Person 类。
+
+首先定义一个Person类：
+
+注意如果是在界面中展示的成员，[需要使用属性，而不是字段](https://stackoverflow.com/a/36897487)。
+
+```c#
+public class Person
+{
+    public string Name { get; set; }
+    public int Age { get; set; }
+    // public int Age; // 这样是错误的！
+}
+
+```
+
+在MainWindow中定义一个Person列表，并绑定ItemSource：
+
+```c#
+List<Person> people = new List<Person>
+{
+    new Person { Name = "John", Age = 30 },
+    new Person { Name = "Jane", Age = 25 },
+    new Person { Name = "Bob", Age = 40 }
+};
+
+myListView.ItemsSource = people;
+
+```
+
+然后在XAML中定义ListView的显示方式：
+
+```xml
+<ListView x:Name="myListView">
+    <ListView.ItemTemplate>
+        <DataTemplate>
+            <StackPanel>
+                <TextBlock Text="{Binding Name}" />
+                <TextBlock Text="{Binding Age}" />
+            </StackPanel>
+        </DataTemplate>
+    </ListView.ItemTemplate>
+</ListView>
+
+```
+
+ref: https://stackoverflow.com/a/36897487
