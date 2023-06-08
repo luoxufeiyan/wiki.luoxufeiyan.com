@@ -9,6 +9,7 @@
   * [RidNacs: 分析文件体积的绿色软件](https://www.splashsoft.de/ridnacs-disk-space-usage-analyzer/)
   * [SpaceSniffer： 分析文件体积](http://www.uderzo.it/main_products/space_sniffer/)
   * [Process Explorer：进程浏览器，可以查看进程线程与通信端口等](https://learn.microsoft.com/en-us/sysinternals/downloads/process-explorer)
+  * [Sumatra PDF: PDF阅读器](https://www.sumatrapdfreader.org/free-pdf-reader.html)
 
 
 ## 常见问题
