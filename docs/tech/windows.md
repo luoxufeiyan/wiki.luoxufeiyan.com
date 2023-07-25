@@ -1,6 +1,14 @@
 # Windows
 
-导出本机全部的IP地址以及配置信息： `netsh -c interface dump > network_config.txt`
+### 备份及恢复本机的IP信息
+
+  * 备份本机的IP信息： `netsh -c interface dump > network_config.txt`
+  * 恢复本机的IP信息： `netsh -f network_config.txt` 或者（`netsh -c Interface -f network_config.txt`）
+
+ref:
+
+* https://superuser.com/questions/573739/netsh-import-doesnt-work
+
 
 ## 常用软件：
   * [AnyTXT：搜索文件内的关键字](https://anytxt.net/)
