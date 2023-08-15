@@ -169,8 +169,9 @@ if(settings.HasFlag(CardDeckSettings.Shuffle)) Console.WriteLine("Shuffle");
 ```
 
 ref: 
-* [C# 7.0 Pattern Matching](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-7#pattern-matching)
-* [c# - Switch on Enum (with Flags attribute) without declaring every possible combination? - Stack Overflow](https://stackoverflow.com/a/52290348)
+
+- [C# 7.0 Pattern Matching](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-7#pattern-matching)
+- [c# - Switch on Enum (with Flags attribute) without declaring every possible combination? - Stack Overflow](https://stackoverflow.com/a/52290348)
 
 ### 注意事项
 
