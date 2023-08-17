@@ -37,3 +37,12 @@ ref:
   ref:
   * https://www.ghacks.net/2017/08/14/turn-off-smart-multi-homed-name-resolution-in-windows/
   * https://github.com/Dreamacro/clash/issues/2136
+
+
+## NTP
+
+  ### NTP客户端
+
+  通过cmd命令，为主机设置一个NTP服务：`w32tm /config /syncfromflags:manual /manualpeerlist:"ntp_server" /update`
+
+  需要使用管理员身份的cmd执行，将 `ntp_server` 替换为NTP服务的IP或者域名。
