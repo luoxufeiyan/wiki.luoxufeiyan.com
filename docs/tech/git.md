@@ -190,7 +190,9 @@ git remote remove project-old # 删除旧仓库的远程
 
 ref: [How to merge two git repositories?](https://stackoverflow.com/questions/1425892/how-to-merge-two-git-repositories)
 
-## git 常用编写
+## [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+
+git 常用编写
 
 - feat: 添加新特性、新功能 (feature)
 - fix: 修复 bug
@@ -200,6 +202,19 @@ ref: [How to merge two git repositories?](https://stackoverflow.com/questions/14
 - perf: 增加代码进行性能测试
 - test: 增加测试用例
 - chore: 改变构建流程、或者增加依赖库、工具等
+
+### [Conventional Commits 的优点](https://www.conventionalcommits.org/en/v1.0.0-beta.2/#why-use-conventional-commits)
+
+- 自动生成变更日志。
+- 自动确定不同功能版本升级（基于提交类型的）。
+- 将更改的性质传达给协作成员。
+- 触发构建和发布流程。
+- 把仓库的提交历史变的更结构化。
+
+相关工具：
+
+- [conventional-changelog/commitlint: 📓 Lint commit messages](https://github.com/conventional-changelog/commitlint)
+- [conventional-changelog/conventional-changelog: Generate changelogs and release notes from a project's commit messages and metadata.](https://github.com/conventional-changelog/conventional-changelog)
 
 ## Links
 * [Git alias](https://gist.github.com/hutusi/e4f32e2bcd8d53ec86de8254ab0d5127)
