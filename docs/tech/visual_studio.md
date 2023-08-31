@@ -22,6 +22,8 @@ ref: [https://weblog.west-wind.com/posts/2017/jan/25/adding-files-to-visual-stud
 
 * create new file
 
+* [Supercharger - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=jasontaylordev.supercharger): https://supercharger.tools/
+
 ## 单线程调试方法
 
 ![vs_debug_threads.png](vs_debug_threads.png)
