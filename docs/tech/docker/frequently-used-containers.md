@@ -64,3 +64,10 @@ ref: [GitHub - wnameless/docker-oracle-xe-11g: Dockerfile of Oracle Database Exp
 docker run -p 80:80 --name a2php -v "$PWD":/var/www/html -d thecodingmachine/php:7.4-v3-apache
 ```
 [thecodingmachine/docker-images-php: A set of PHP Docker images](https://github.com/thecodingmachine/docker-images-php)
+
+
+### LNMP + Redis
+
+更适合中国宝宝体质的LNMP环境
+
+[PHP本地开发环境Docker-测试版](https://github.com/zhangjunjie6b/phpdocker)
