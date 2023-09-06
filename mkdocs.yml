@@ -23,6 +23,13 @@ theme:
     - navigation.top
     - navigation.tracking
     - content.code.annotate
+
+plugins:
+  - search:
+      lang: 
+        - en
+        - zh
+
 extra:
   analytics:
     provider: google
