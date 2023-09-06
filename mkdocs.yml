@@ -23,6 +23,7 @@ theme:
     - navigation.top
     - navigation.tracking
     - content.code.annotate
+    - content.code.copy
 
 plugins:
   - search:
