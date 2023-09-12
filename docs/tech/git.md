@@ -29,9 +29,17 @@ ref: [我用四个命令概括了 Git 的所有套路 :: labuladong的算法小�
 
 ## 新建与克隆
 
-### 代理
+### Proxy 代理
 
-使用代理：
+为 git 设置代理，可以通过 `git config` 命令设置。 Git支持多种代理，包括 http, https, socks4, socks5 等。
+
+为全局设置http代理：
+
+```shell
+git config --global http.proxy http://127.0.0.1:8118
+```
+
+为单独仓库设置socks代理，需要先切换到仓库目录下：
 
 ```shell
 git config --local http.proxy socks5h://127.0.0.1:1080
