@@ -1,4 +1,4 @@
-# Algorithm
+# Algorithm 算法
 
 ## 分治
 
