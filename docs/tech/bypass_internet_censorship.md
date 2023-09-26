@@ -2,6 +2,7 @@
 
 > Where there is oppression, there is resistance. ——Karl Marx
 
+海外业务合规地与中国互联：[体系结构：使用 Azure 虚拟 WAN 和安全中心与中国互连](https://learn.microsoft.com/zh-cn/azure/virtual-wan/interconnect-china)
 
 ## UCR Security Lab 
 
