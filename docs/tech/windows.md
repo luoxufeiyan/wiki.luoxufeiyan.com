@@ -27,7 +27,7 @@ ref:
 
 ### 智能多宿主名称解析
 
-Windows8+ 中，默认启动了智能多宿主名称解析，会将DNS请求向本机所有的网络接口发送，在爱网上网时，可能会造成DNS泄露。
+Windows8+ 中，默认启动了智能多宿主名称解析，会将DNS请求向本机所有的网络接口发送，在某些敏感场景下，可能会造成DNS泄露。
 
 ![dns-multi-homed-name-resolution](dns-multi-homed-name-resolution.png)
 
