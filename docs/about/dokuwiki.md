@@ -36,8 +36,11 @@
 
 微博图床挂了，使用Dokuwiki自带的媒体管理器。
 
+本地图片测试：
 ![](fanche.gif)
 
+IPFS图片测试：
+![](https://ipfs.io/ipfs/QmWk2Sw36BPVtKtedgaJ5skBucQ3BNzBnvhKbWUAvG5RUK?filename=fanche-reverse.gif)
 
 ## 联系我
 
