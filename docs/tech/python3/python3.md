@@ -58,7 +58,7 @@ dic = {tup: 'value'}
 
   * python2.x里, b前缀没什么具体意义， 只是为了兼容python3.x的这种写法
 
-[[http://blog.csdn.net/u010496169/article/details/70045895|外部链接]]
+[http://blog.csdn.net/u010496169/article/details/70045895](http://blog.csdn.net/u010496169/article/details/70045895)
 
 ## 与Python2的区别
 ### 显式继承
