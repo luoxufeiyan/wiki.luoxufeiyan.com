@@ -224,6 +224,63 @@ git 常用编写
 - [conventional-changelog/commitlint: 📓 Lint commit messages](https://github.com/conventional-changelog/commitlint)
 - [conventional-changelog/conventional-changelog: Generate changelogs and release notes from a project's commit messages and metadata.](https://github.com/conventional-changelog/conventional-changelog)
 
+## GPG Sign
+
+为 Git 提交添加 GPG 签名。
+
+1. 列出当前本机上的所有私钥。 
+
+```shell
+gpg --list-secret-keys --keyid-format=long
+```
+
+结果如下：
+
+```shell
+/Users/hubot/.gnupg/secring.gpg
+------------------------------------
+sec   4096R/3AA5C34371567BD2 2016-03-10 [expires: 2017-03-10]
+uid                          Hubot <hubot@example.com>
+ssb   4096R/4BB6D45482678BE3 2016-03-10
+```
+
+2. 选择提交所使用的密钥，如上的 `3AA5C34371567BD2`。
+
+```shell
+git config --global user.signingkey 3AA5C34371567BD2
+```
+
+3. 设置提交时默认进行 commit 签名。
+
+```shell
+git config --global commit.gpgsign true
+```
+ref: [https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key](https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key)
+
+### tips
+
+如果你使用的某些 Git 客户端使用了 GitBash （例如 git-fork），且你使用了 GPG 程序（例如 GPG4Win 或者 Kleopatra）来管理密钥的话，GitBash 中的 gpg 路径可能未正确的指向 GPG 的程序，导致找不到密钥。
+
+这种情况下，需要指向自定义的 GPG 程序。
+
+```shell
+git config --global gpg.program "/c/Program Files (x86)/GnuPG/bin/gpg.exe"
+```
+
+或者手动配置 gitconfig 文件：
+
+```gitconfig
+[gpg]
+    program = C:\\Program Files (x86)\\GnuPG\\bin\\gpg.exe
+    format = openpgp
+[commit]
+    gpgsign = true
+```
+
+ref: [https://gist.github.com/BoGnY/f9b1be6393234537c3e247f33e74094a](https://gist.github.com/BoGnY/f9b1be6393234537c3e247f33e74094a)
+
+
+
 ## Links
 * [Git alias](https://gist.github.com/hutusi/e4f32e2bcd8d53ec86de8254ab0d5127)
 * [Oh Shit, Git!?! 在使用 git 时的一些尴尬场景里的修复方案](https://ohshitgit.com/)
