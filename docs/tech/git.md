@@ -200,6 +200,12 @@ ref: [How to merge two git repositories?](https://stackoverflow.com/questions/14
 
 ### 常用查询 
 
+查询仓库总代码量：
+
+```sh
+git ls-files | xargs wc -l | tail -n 1
+```
+
 查询最近一年的代码变化行数：
 
 ```sh
@@ -212,7 +218,11 @@ git log --since="1 year ago" --numstat | awk '/^[0-9]+/ { added += $1; deleted +
 git log --author="Hugh Gao" --pretty=tformat: --numstat | awk '{ add += $1; subs += $2 } END { printf "added lines: %s\nremoved lines: %s\ntotal lines: %s\n", add, subs, add - subs }'
 ```
 
-查询最近一年的代码变化行数：
+查询一段时间内，各作者提交的行数：
+
+```sh
+git log  --format='%aN' | sort -u | while read name; do echo -en "$name\t"; git log --author="$name" --pretty=tformat:  --since =2018-02-08 --until=2024-03-08 --numstat | awk '{ add += $1; subs += $2; loc += $1 - $2 } END { printf "added lines: %s, removed lines: %s, total lines: %s\n", add, subs, loc }' -; done
+```
 
 ## [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
