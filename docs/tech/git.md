@@ -198,6 +198,22 @@ git remote remove project-old # 删除旧仓库的远程
 
 ref: [How to merge two git repositories?](https://stackoverflow.com/questions/1425892/how-to-merge-two-git-repositories)
 
+### 常用查询 
+
+查询最近一年的代码变化行数：
+
+```sh
+git log --since="1 year ago" --numstat | awk '/^[0-9]+/ { added += $1; deleted += $2 } END { printf("Added lines: %s\nDeleted lines: %s\n", added, deleted) }'
+```
+
+查询作者对仓库的修改行数：
+
+```sh
+git log --author="Hugh Gao" --pretty=tformat: --numstat | awk '{ add += $1; subs += $2 } END { printf "added lines: %s\nremoved lines: %s\ntotal lines: %s\n", add, subs, add - subs }'
+```
+
+查询最近一年的代码变化行数：
+
 ## [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
 git 常用编写
