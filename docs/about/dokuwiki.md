@@ -5,7 +5,7 @@
 
 知识库使用Dokuwiki搭建，GMO Cloud提供计算服务，支持`TLS1.3`访问。
 
-~~从IDCF clond搬到了美国东部一台只有可怜的512MB内存的云主机上。纪念一下天国的IDCF云。~~
+~~IDCF提供计算服务~~
 
 ![IDCF speed](https://www.speedtest.net/result/6807083900.png)
 
@@ -42,9 +42,3 @@
 IPFS图片测试：
 ![](https://ipfs.io/ipfs/QmWk2Sw36BPVtKtedgaJ5skBucQ3BNzBnvhKbWUAvG5RUK?filename=fanche-reverse.gif)
 
-## 联系我
-
-本站无评论，请通过以下访问联系我。
-
-* email: `$ echo YWRtaW5AbHVveHVmZWl5YW4uY29tCg== | base64 --decode`
-* [关于 | 落絮飞雁的个人网站](https://www.luoxufeiyan.com/about/)
