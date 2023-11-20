@@ -11,7 +11,8 @@ References are provided throughout for attribution.
 This knowledge base is provided as is without warranty of any kind.
 
 
----
+
+## 首页
 
 欢迎访问我的知识库，这里存放我的读书笔记和代码片段。
 
@@ -19,7 +20,3 @@ This knowledge base is provided as is without warranty of any kind.
 
 本知识库不保证内容正确，不提供售后。
 
-
-## Contact 
-
-email: `$ echo YWRtaW5AbHVveHVmZWl5YW4uY29tCg== | base64 --decode`
