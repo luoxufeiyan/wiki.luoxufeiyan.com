@@ -14,9 +14,9 @@ Git 状态
 
 Git 的三个分区： working directory, stage area (index area), HEAD (commits).
 
-* working directory 指的是文件夹中实际能看到的文件。
-* stage 指的是通过 `add` 命令添加进入的暂存区。
-* HEAD 是当 stage 存在修改时，通过 `commit` 命令添加进入的 Git 历史区，自此修改会被 Git 存档。HEAD 指的是 Git 的 `HEAD` 指针指向的位置。
+- working directory 指的是文件夹中实际能看到的文件。
+- stage 指的是通过 `add` 命令添加进入的暂存区。
+- HEAD 是当 stage 存在修改时，通过 `commit` 命令添加进入的 Git 历史区，自此修改会被 Git 存档。HEAD 指的是 Git 的 `HEAD` 指针指向的位置。
 
 working directory 与 stage 的改动可以通过 `git status` 命令查看， HEAD 的改动可以通过 `git log` 查看。
 
@@ -24,22 +24,21 @@ working directory 与 stage 的改动可以通过 `git status` 命令查看， H
 
 ![Git State Transform Diagram](git-std.png)
 
-
-ref: [我用四个命令概括了 Git 的所有套路 :: labuladong的算法小抄](https://labuladong.github.io/algo/di-si-zhan-4baf4/wo-yong-si-ad48a/)
+ref: [我用四个命令概括了 Git 的所有套路 :: labuladong 的算法小抄](https://labuladong.github.io/algo/di-si-zhan-4baf4/wo-yong-si-ad48a/)
 
 ## 新建与克隆
 
 ### Proxy 代理
 
-为 git 设置代理，可以通过 `git config` 命令设置。 Git支持多种代理，包括 http, https, socks4, socks5 等。
+为 git 设置代理，可以通过 `git config` 命令设置。 Git 支持多种代理，包括 http, https, socks4, socks5 等。
 
-为全局设置http代理：
+为全局设置 http 代理：
 
 ```shell
 git config --global http.proxy http://127.0.0.1:8118
 ```
 
-为单独仓库设置socks代理，需要先切换到仓库目录下：
+为单独仓库设置 socks 代理，需要先切换到仓库目录下：
 
 ```shell
 git config --local http.proxy socks5h://127.0.0.1:1080
@@ -54,7 +53,7 @@ git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git --con
 取消代理：
 
 ```shell
-git config --local --unset http.proxy  
+git config --local --unset http.proxy
 ```
 
 #### SSH 连接 Git
@@ -97,12 +96,11 @@ git remote add origin git@github.com:user/repo.git
 
 创建分支： `git branch <name>`
 
-切换分支： `git checkout <name>` 。切换分支后，Git会将工作目录改动到当前的分支上。
+切换分支： `git checkout <name>` 。切换分支后，Git 会将工作目录改动到当前的分支上。
 
-创建分支并立刻切换到这个分支： `git checkout -b <name>` 
+创建分支并立刻切换到这个分支： `git checkout -b <name>`
 
-删除分支： `git branch -d <name>` 。如果分支没有被合并，Git默认会给出确认提示。
-
+删除分支： `git branch -d <name>` 。如果分支没有被合并，Git 默认会给出确认提示。
 
 #### 删除远程分支
 
@@ -181,12 +179,29 @@ git commit --allow-empty -m "Trigger Build"
 git reset --hard HEAD~1
 ```
 
+### Co-author 合著提交
+
+在通过 commit 进行提交时，在添加 commit message 时，可以通过 `Co-authored-by` 来添加合著人。
+
+在编写提交信息时，先不闭合引号，先添加两个空行，然后输入 `Co-authored-by: name <name@example.com>`，然后输入合著人的信息，在合著人消息之后，再闭合引号。
+
+有多个合著人时，保持一行一个合著人。
+
+例如：
+
+```shell
+$ git commit -m "Refactor usability tests.
+>
+>
+Co-authored-by: lxfy <hi@luoxufeiyan.com>
+Co-authored-by: name <name@example.com>"
+```
+
 ### Merge two git repositories 合并两个仓库
 
 如果两个仓库的历史记录不一致，需要合并两个仓库，基本方法是在新仓库上添加旧仓库做为远程，然后通过 merge 来合并两个仓库。
 
 例如将 project-old 合并到 project-new ：
-
 
 ```shell
 cd path/to/project-new # 先进入新仓库
@@ -198,7 +213,7 @@ git remote remove project-old # 删除旧仓库的远程
 
 ref: [How to merge two git repositories?](https://stackoverflow.com/questions/1425892/how-to-merge-two-git-repositories)
 
-### 常用查询 
+### 常用查询
 
 查询仓库总代码量：
 
@@ -254,7 +269,7 @@ git 常用编写
 
 为 Git 提交添加 GPG 签名。
 
-1. 列出当前本机上的所有私钥。 
+1. 列出当前本机上的所有私钥。
 
 ```shell
 gpg --list-secret-keys --keyid-format=long
@@ -281,6 +296,7 @@ git config --global user.signingkey 3AA5C34371567BD2
 ```shell
 git config --global commit.gpgsign true
 ```
+
 ref: [https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key](https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key)
 
 ### tips
@@ -305,9 +321,8 @@ git config --global gpg.program "/c/Program Files (x86)/GnuPG/bin/gpg.exe"
 
 ref: [https://gist.github.com/BoGnY/f9b1be6393234537c3e247f33e74094a](https://gist.github.com/BoGnY/f9b1be6393234537c3e247f33e74094a)
 
-
-
 ## Links
-* [Git alias](https://gist.github.com/hutusi/e4f32e2bcd8d53ec86de8254ab0d5127)
-* [Oh Shit, Git!?! 在使用 git 时的一些尴尬场景里的修复方案](https://ohshitgit.com/)
-* [Flight rules for Git Git 飞行手册](https://github.com/k88hudson/git-flight-rules)
+
+- [Git alias](https://gist.github.com/hutusi/e4f32e2bcd8d53ec86de8254ab0d5127)
+- [Oh Shit, Git!?! 在使用 git 时的一些尴尬场景里的修复方案](https://ohshitgit.com/)
+- [Flight rules for Git Git 飞行手册](https://github.com/k88hudson/git-flight-rules)
