@@ -140,7 +140,7 @@ git push origin :old-name new-name
 git push origin -u new-name
 ```
 
-⚠️ 舍弃本地修改，从远程拉取。
+⚠️ 舍弃本地修改，从远程拉取。
 
 ```shell
 git reset --hard origin/master
@@ -149,34 +149,14 @@ git pull origin master
 
 ref:[Rename a local and remote branch in git](https://multiplestates.wordpress.com/2015/02/05/rename-a-local-and-remote-branch-in-git/)
 
-## 小抄速记
-
-### Cherry pick 从某一分支拉取特定的 commit 文件
-
-合并所有 commit 可以用`git merge`，当只需要特定的 commit 时，可以用`cherry pick`。
-
-用法：
-
-```shell
-git cherry-pick <commitHash>
-```
+## Commit 提交
 
 ### empty commit 空提交
 
-创建空提交。
+创建空提交，在需要触发一些 CI 条件的时候比较有用。
 
 ```shell
 git commit --allow-empty -m "Trigger Build"
-```
-
-### 撤销远程修改
-
-即便 commit 已经推送到远程，依然可以用 revert 的方法将远程的提交删除。
-
-### 撤销本地的最后一次 commit
-
-```shell
-git reset --hard HEAD~1
 ```
 
 ### Co-author 合著提交
@@ -195,6 +175,42 @@ $ git commit -m "Refactor usability tests.
 >
 Co-authored-by: lxfy <hi@luoxufeiyan.com>
 Co-authored-by: name <name@example.com>"
+```
+
+### Change the author of a commit 改变某次提交的作者
+
+修改某一次 git 提交时候的作者信息，在帮别人提交代码的时候会很有用。
+
+```shell
+git commit --author="LXFY <admin@luoxufeiyan.com>"
+```
+
+或者 使用 amend 参数，改变前一次提交的作者信息。
+
+```shell
+git commit --amend --author="LXFY <admin@luoxufeiyan.com>"
+```
+
+## 小抄速记
+
+### Cherry pick 从某一分支拉取特定的 commit 文件
+
+合并所有 commit 可以用`git merge`，当只需要特定的 commit 时，可以用`cherry pick`。
+
+用法：
+
+```shell
+git cherry-pick <commitHash>
+```
+
+### 撤销远程修改
+
+即便 commit 已经推送到远程，依然可以用 revert 的方法将远程的提交删除。
+
+### 撤销本地的最后一次 commit
+
+```shell
+git reset --hard HEAD~1
 ```
 
 ### Merge two git repositories 合并两个仓库
