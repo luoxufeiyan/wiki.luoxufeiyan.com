@@ -1,4 +1,5 @@
 # Sklearn
 
 ### preprocessing.LabelEncoder()
-为label分配编号
+
+为 label 分配编号

@@ -2,7 +2,7 @@
 
 ## OpenCV
 
-图片叠加的坑，叠加时不能简单相加，会造成overflow.
+图片叠加的坑，叠加时不能简单相加，会造成 overflow.
 
 See here for more information on how opencv and numpy handle addition in this case: https://docs.opencv.org/master/d0/d86/tutorial_py_image_arithmetics.html
 
