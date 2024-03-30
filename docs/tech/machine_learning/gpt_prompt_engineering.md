@@ -72,3 +72,5 @@ ref: https://baoyu.io/blog/prompt-engineering/my-translator-bot
 
 - [PromptPerfect - Elevate Your Prompts to Perfection. Prompt Engineering, Optimizing, Debugging and Hosting.](https://promptperfect.jina.ai/prompts)
 - https://www.gpttsc.top/
+
+- [Prompt Library 提示词大全](https://www.moreusefulthings.com/prompts)：[Ref](https://twitter.com/huangyun_122/status/1771727839554900334)。
