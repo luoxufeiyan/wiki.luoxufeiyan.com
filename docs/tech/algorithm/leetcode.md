@@ -11,3 +11,4 @@
 - [Back To Back SWE](https://www.youtube.com/channel/UCmJz2DV1a3yfgrR7GqRtUUA)
 - [花花酱 Hua Hua - YouTube](https://www.youtube.com/user/xxfflower)
 - [开篇词 - labuladong 的算法小抄](https://labuladong.github.io/algo)
+- [吴师兄学算法](https://blog.algomooc.com/)：LeetCode 上面的题目分类汇总，[Ref](https://twitter.com/knowledgefxg/status/1772629391547175000)。

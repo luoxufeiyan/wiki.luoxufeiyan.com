@@ -27,10 +27,11 @@ jobs:
         run: mkdocs build --verbose --clean
 
       - name: Publish
-        uses: dennisameling/ftp-upload-action@v1
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          local_dir: ./site/
           server: ${{ secrets.FTP_SERVER }}
-          server_dir: ${{ secrets.FTP_SERVER_PATH }}
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./site/
+          server-dir: ${{ secrets.FTP_SERVER_PATH }}
+          protocol: ftps
