@@ -56,6 +56,8 @@ git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git --con
 git config --local --unset http.proxy
 ```
 
+在国内加速访问 GitHub 的方式可以参考：[[2022.03] GitHub 加速终极教程](https://hellodk.cn/post/975)
+
 #### SSH 连接 Git
 
 1. 启用身份验证
