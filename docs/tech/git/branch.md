@@ -54,3 +54,21 @@ git pull origin master
 ```
 
 ref:[Rename a local and remote branch in git](https://multiplestates.wordpress.com/2015/02/05/rename-a-local-and-remote-branch-in-git/)
+
+
+## change url for git remote
+
+```shell
+git remote -v
+# View existing remotes
+# origin  https://my.old.repo.com/user/repo.git (fetch)
+# origin  https://my.old.repo.com/user/repo.git (push)
+
+git remote set-url origin https://new.com/user/repo.git
+# Change the 'origin' remote's URL
+
+git remote -v
+# Verify new remote URL
+# origin  https://new.com/user/repo.git (fetch)
+# origin  https://new.com/user/repo.git (push)
+```

@@ -240,6 +240,57 @@ git config --global gpg.program "/c/Program Files (x86)/GnuPG/bin/gpg.exe"
 
 ref: [https://gist.github.com/BoGnY/f9b1be6393234537c3e247f33e74094a](https://gist.github.com/BoGnY/f9b1be6393234537c3e247f33e74094a)
 
+
+## FAQ
+
+### 解决因推送体积过大而失败的问题
+
+推送时，出现以下问题：
+
+![268ae902939a747107fd20db89f4ae5b.png](:/d648ba9e829b404eb84eb9dc459eb36a)
+
+
+
+```log
+Enumerating objects: 5979, done.
+Counting objects:   0% (1/5979)
+Counting objects:   1% (60/5979)
+......
+Writing objects:  99% (5920/5979), 25.83 MiB | 51.64 MiB/s
+Writing objects: 100% (5979/5979), 25.83 MiB | 51.64 MiB/s
+Writing objects: 100% (5979/5979), 41.36 MiB | 72.77 MiB/s, done.
+Total 5979 (delta 3888), reused 5818 (delta 3799), pack-reused 0
+fatal: the remote end hung up unexpectedly
+Pushing to http://MyAddr/repo.git
+Everything up-to-date
+```
+
+问题原因是当前 git 设置的 HTTP POST 包体长度过大。
+
+解决方法：
+
+```shell
+git config http.postBuffer 524288000
+```
+
+ref: [github - Git, fatal: The remote end hung up unexpectedly - Stack Overflow](https://stackoverflow.com/a/15851500/3886059)
+
+
+如果修改了客户端的配置，问题仍然存在，且变成了 HTTP 413 ERROR，表示服务端的 HTTP Server 不支持过大的 POST 请求，一般是 HTTP Server + reverse proxy + git Server 的情况。
+
+问题表现：
+
+```log
+error: RPC failed; result=22, HTTP code = 413
+fatal: The remote end hung up unexpectedly 
+fatal: The remote end hung up unexpectedly
+```
+
+需要修改 HTTP Server 的设置，把 POST 设置为一个较大的值。
+
+ref: [git - Github Push Error: RPC failed; result=22, HTTP code = 413 - Stack Overflow](https://stackoverflow.com/a/15021750/3886059)
+
+
 ## Links
 
 - [Git alias](https://gist.github.com/hutusi/e4f32e2bcd8d53ec86de8254ab0d5127)
