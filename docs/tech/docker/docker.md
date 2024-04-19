@@ -39,3 +39,31 @@ COPY 这类指令中的源文件的路径都是相对路径。这也是初学者
 ### 进入容器
 
 `docker exec -it CONTAINER_NAME bash`
+
+
+## 配置
+
+### 为 Docker 配置代理
+
+Systemd 模式：
+
+如果 Docker 是通过 systemd 的方式启动管理的，可以通过以下方式配置代理：
+
+新建 `/etc/systemd/system/docker.service.d/10_docker_proxy.conf` 文件：
+
+```shell
+
+[Service]
+Environment=HTTP_PROXY=http://10.243.80.87:8228
+Environment=HTTPS_PROXY=http://10.243.80.87:8228
+
+```
+
+填入 代理信息后，重启。
+
+```shell
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+```
+
+ref: [Configure the daemon with systemd | Docker Docs](https://docs.docker.com/config/daemon/systemd/)
