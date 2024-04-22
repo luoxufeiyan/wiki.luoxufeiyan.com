@@ -1,5 +1,5 @@
 # Docker
-[[ https://yeasy.gitbooks.io/docker_practice/content/compose/|Docker —— 从入门到实践]]
+[Docker —— 从入门到实践](https://yeasy.gitbooks.io/docker_practice/content/compose/)
 
 ## 综述
 
@@ -10,7 +10,7 @@
 ![](docker-arch.png)
 
 
-[[https://www.zhihu.com/question/48174633/answer/180743885|知乎 - docker容器与虚拟机有什么区别？]]
+[知乎 - docker容器与虚拟机有什么区别？](https://www.zhihu.com/question/48174633/answer/180743885)
 
 
 ## 容器
