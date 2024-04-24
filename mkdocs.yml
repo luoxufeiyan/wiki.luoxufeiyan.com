@@ -6,7 +6,7 @@ site_dir: "site"
 copyright: CC Attribution-NonCommercial-ShareAlike 4.0 International
 
 repo_url: https://github.com/luoxufeiyan/wiki.luoxufeiyan.com
-edit_uri: edit/main/docs/
+edit_uri: edit/master/docs/
 
 markdown_extensions:
   - pymdownx.tilde
