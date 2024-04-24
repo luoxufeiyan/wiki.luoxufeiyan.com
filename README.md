@@ -8,3 +8,8 @@ All markdown files locates in `docs` folder.
 
 This work is licensed under a
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](LICENSE).
+
+## Build
+1. (Recommended) Create a virtual environment using `python3 -m venv venv`, and enter the virtual environment with `. venv/bin/activate`;
+2. Install dependencies: `pip install -r requirements.txt`;
+3. Build & preview: `mkdocs serve`.

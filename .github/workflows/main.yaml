@@ -14,14 +14,11 @@ jobs:
       - name: Initialize Python
         uses: actions/setup-python@v2
         with:
-          python-version: "3.8"
+          python-version: "3.10"
 
       - name: Install dependencies
         run: |
-          pip install jieba
-          pip install mkdocs
-          pip install mkdocs-material
-          pip install pymdown-extensions
+          pip3 install -r requirements.txt
 
       - name: Build
         run: mkdocs build --verbose --clean
