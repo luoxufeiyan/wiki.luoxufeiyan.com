@@ -49,3 +49,45 @@ static void Main()
 
 泛型版本的枚举为 `IEnumerable<T>`，泛型枚举不需要object基类的引用，而且类型安全，而非泛型枚举不具备这两个条件。
 
+# Enumerable
+
+## Methods 
+
+### SkipWhile
+
+Bypasses elements in a sequence as long as a specified condition is true and then returns the remaining elements.
+
+跳过集合中所有的条件为真的元素，（当第一次遇到条件为假时）返回剩余的元素。
+
+例如想从 fruits 集合中分隔出 Date 及以后的水果。
+
+```csharp
+IEnumerable<string> fruits = new List<string>
+{
+	"Apple",
+	"Banana",
+	"Cherry",
+	"Date",
+	"Elderberry",
+	"Fig"
+};
+
+fruits = fruits.SkipWhile(f => f != "Date"); // 集合中的 Date 在这个条件返回假，使 SkipWhile 生效。
+Console.WriteLine(string.Join(',', fruits)); // Date,Elderberry,Fig
+```
+
+此条件只判断一次。
+
+例如想从集合中过滤出大于等于 5 的元素，如果集合中的元素未排序，可能无法过滤。
+
+```csharp
+IEnumerable<int> b = new List<int>(){ 1, 3, 5, 6, 0, 2, 3 };
+b = b.SkipWhile(e => e < 5);
+Console.WriteLine(string.Join(',', b)); // 5,6,0,2,3
+```
+
+这里后面的 0 2 3 也被选中了，此方法不适用未排序的集合。
+
+
+
+ref: [Enumerable.SkipWhile Method (System.Linq) | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/api/system.linq.enumerable.skipwhile?view=net-8.0)
