@@ -18,6 +18,7 @@ ref:
   * [SpaceSniffer： 分析文件体积](http://www.uderzo.it/main_products/space_sniffer/)
   * [Process Explorer：进程浏览器，可以查看进程线程与通信端口等](https://learn.microsoft.com/en-us/sysinternals/downloads/process-explorer)
   * [Sumatra PDF: PDF阅读器](https://www.sumatrapdfreader.org/free-pdf-reader.html)
+  * [NetSetMan: 根据条件切换网卡及IP的工具](https://www.netsetman.com/en/freeware)
 
 
 ## 常见问题
