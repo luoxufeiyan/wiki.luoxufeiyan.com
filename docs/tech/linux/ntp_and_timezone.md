@@ -1,6 +1,6 @@
 # Ntp and Timezone 时间和时区
 
-In Linux, there are two main options: `ntpd` and `systemd-timesyncd`。
+In Linux, there are two main options: `ntpd` and `systemd-timesyncd`. 
 
 ### ntpd (Network Time Protocol Daemon):
 
@@ -16,7 +16,7 @@ In Linux, there are two main options: `ntpd` and `systemd-timesyncd`。
 4. **Use Case**:
    - **ntpd**: ntpd is commonly used in server environments where precise time synchronization is crucial, such as financial institutions, data centers, and scientific research facilities.
 
-### [Recommended]systemd-timesyncd:
+### [✨Recommended] systemd-timesyncd:
 
 1. **Simplicity**:
    - **timesyncd**: systemd-timesyncd is a simpler and lightweight alternative to ntpd. It is part of the systemd suite and is designed for basic time synchronization needs.
