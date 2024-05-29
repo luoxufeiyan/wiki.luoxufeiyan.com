@@ -28,7 +28,6 @@ theme:
     - content.code.annotate
     - content.code.copy
     - content.action.edit
-    - content.action.view
 
 plugins:
   - search:
