@@ -44,7 +44,7 @@ git config --global http.proxy http://127.0.0.1:8118
 git config --local http.proxy socks5h://127.0.0.1:1080
 ```
 
-在克隆时使用代理：
+在克隆时使用代理，仅需在克隆命令后加 ` --config "http.proxy=socks5h://127.0.0.1:1080"` 。 例如：
 
 ```shell
 git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git --config "http.proxy=socks5h://127.0.0.1:1080"
