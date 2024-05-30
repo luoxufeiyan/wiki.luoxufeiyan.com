@@ -23,3 +23,7 @@ dotnet nuget push xxx.nupkg -s mylocalNuget
 ```
 
 ref: [NuGet behind a proxy - Stack Overflow](https://stackoverflow.com/a/15463892/3886059)
+
+### Snippets
+
+将本地的包批量提交到远程： [https://gist.github.com/luoxufeiyan/b3c245ed461350235072f0ced85b17af](https://gist.github.com/luoxufeiyan/b3c245ed461350235072f0ced85b17af)
