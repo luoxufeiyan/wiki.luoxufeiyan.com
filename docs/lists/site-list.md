@@ -8,7 +8,7 @@
 ## 学习
 
 
-  * [[http://terms.naer.edu.tw/|國家教育研究院雙語詞彙、學術名詞暨辭書資訊網]]汉英学术名词翻译
+  * [國家教育研究院雙語詞彙、學術名詞暨辭書資訊網](http://terms.naer.edu.tw/)汉英学术名词翻译
 
 ## 效率
   * [MeisterTask项目管理工具](https://www.meistertask.com/zh)
@@ -26,7 +26,7 @@
 ## 资源
 
 
-  * [[http://www.panduoduo.net/|盘多多]]网盘搜索
+  * [盘多多](http://www.panduoduo.net/)网盘搜索
   * [证件水印](https://joyneop.xyz/id-shuiyin/)
   * [美国电话验证](https://mp.weixin.qq.com/s/b0n5o2XdkmQvvXPucB5yyA)
   * [牛津大学图书馆的白噪音](https://www.ox.ac.uk/soundsofthebodleian/#radcam)
@@ -34,7 +34,7 @@
 
 ## 前端
 
-  * [[https://toolbox.googleapps.com/apps/har_analyzer/|HAR分析器]]HAR分析器
+  * [HAR分析器](https://toolbox.googleapps.com/apps/har_analyzer/)HAR分析器
   * [将富文本转为Markdown](https://euangoddard.github.io/clipboard2markdown/)
 
 ## 娱乐

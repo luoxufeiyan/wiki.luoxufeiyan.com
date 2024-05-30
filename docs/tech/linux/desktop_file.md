@@ -25,4 +25,4 @@ StartupNotify=true
 
 Exec为启动命令。
 
-[[https://www.maketecheasier.com/create-desktop-file-linux/|How to Create a .Desktop File For Your Application in Linux - Make Tech Easier]]
+[How to Create a .Desktop File For Your Application in Linux - Make Tech Easier](https://www.maketecheasier.com/create-desktop-file-linux/)

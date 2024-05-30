@@ -2,9 +2,9 @@
 
 范文参考：
 
-[[http://blog.sina.com.cn/u/2794721463|AmyWritingWorkshop的博客]]
+[AmyWritingWorkshop的博客](http://blog.sina.com.cn/u/2794721463)
 
-[[http://blog.sina.com.cn/u/1702566677|老徐雅思的博客]]
+[老徐雅思的博客](http://blog.sina.com.cn/u/1702566677)
 
 ## though / although / despite 区别
 

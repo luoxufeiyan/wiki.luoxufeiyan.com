@@ -7,4 +7,4 @@ EXIT_SUCCESS 和 EXIT_FAILURE 宏展开成能用作 exit 参数的整数表达�
 
 头文件`stdlib.h`
 
-[[https://zh.cppreference.com/w/c/program/EXIT_status|https://zh.cppreference.com/w/c/program/EXIT_status]]
+[https://zh.cppreference.com/w/c/program/EXIT_status](https://zh.cppreference.com/w/c/program/EXIT_status)

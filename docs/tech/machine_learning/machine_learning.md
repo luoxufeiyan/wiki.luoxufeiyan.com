@@ -5,9 +5,9 @@
 
 [机器学习速成课程 | Google Developers](https://developers.google.com/machine-learning/crash-course?hl=zh_cn)
 
-[[https://www.mlhub123.com/|mlhub - 机器学习导航站]]
+[mlhub - 机器学习导航站](https://www.mlhub123.com/)
 
-[[http://www.ai-start.com/|AI初学者--（机器学习爱好者）]]
+[AI初学者--（机器学习爱好者）](http://www.ai-start.com/)
 
 [Introduction · 斯坦福机器学习笔记](https://yoyoyohamapi.gitbooks.io/mit-ml/content/)
 

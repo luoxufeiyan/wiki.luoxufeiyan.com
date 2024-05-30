@@ -39,7 +39,7 @@ To be more specific, 具体数据
 
 注意时态。
 
-如果涉及到到将来时态的线图可以这样改写开头： and **how it is expected to transform** during the one decade from 2010. [[https://mp.weixin.qq.com/s/wXHOzJy2Y-1jJmoDEpoJsw|外部链接]]
+如果涉及到到将来时态的线图可以这样改写开头： and **how it is expected to transform** during the one decade from 2010. [外部链接](https://mp.weixin.qq.com/s/wXHOzJy2Y-1jJmoDEpoJsw)
 
 ### 饼图 pie chart
 

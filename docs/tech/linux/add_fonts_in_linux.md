@@ -2,7 +2,7 @@
 
 向系统中添加字体，以可爱的果冻人emoji字体为例。
 
-[[https://noto-website.storage.googleapis.com/pkgs/NotoColorEmoji-unhinted.zip|下载NotoColorEmoji]]（果冻人emoji）字体，并解压，定位到文件夹内。
+[下载NotoColorEmoji](https://noto-website.storage.googleapis.com/pkgs/NotoColorEmoji-unhinted.zip)（果冻人emoji）字体，并解压，定位到文件夹内。
 
 ```
 #创建字体文件夹并拷贝字体
@@ -56,7 +56,7 @@ cat << 'EOF' > ~/.config/fontconfig/fonts.conf
 EOF
 ```
 
-然后重启电脑就可以了。emoji字体效果可以[[http://eosrei.github.io/emojione-color-font/full-demo.html|在这里看]]。
+然后重启电脑就可以了。emoji字体效果可以[在这里看](http://eosrei.github.io/emojione-color-font/full-demo.html)。
 
 ![](linux-noto-emoji.jpg)
 

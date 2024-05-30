@@ -24,4 +24,4 @@
 4）然后重启，才算安全的完成了密码重置（不要忘记把光盘卸载）。
 ```
 
-[[https://social.technet.microsoft.com/Forums/ie/en-US/62e5d7f5-3639-43d2-8555-7339b6abf4a8/windows-server-2012-r2?forum=winserver8zhcn|windows server 2012 R2登录密码忘了怎么办呢？]]
+[windows server 2012 R2登录密码忘了怎么办呢？](https://social.technet.microsoft.com/Forums/ie/en-US/62e5d7f5-3639-43d2-8555-7339b6abf4a8/windows-server-2012-r2?forum=winserver8zhcn)

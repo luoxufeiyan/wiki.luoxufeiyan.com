@@ -24,7 +24,7 @@
 22. Where were we? (Resume the conversation)
 23. I’m sorry, I didn’t catch you 
 24. Lucky you!
-25. [[https://dictionary.cambridge.org/dictionary/english/freak-sb-out?q=freak%2Bout|I freaked out]] = to become very angry, scared or excited
+25. [I freaked out](https://dictionary.cambridge.org/dictionary/english/freak-sb-out?q=freak%2Bout) = to become very angry, scared or excited
 26. Good for you! 
 27. You’ve got to be kidding me! 
 28. Cheer up! 
@@ -51,4 +51,4 @@
 49. Thank heavens it’s Friday 
 50. Take care! 
 
-[[https://www.youtube.com/watch?v=bj5btO2nvt8|REF:Youtube link]]
+[REF:Youtube link](https://www.youtube.com/watch?v=bj5btO2nvt8)

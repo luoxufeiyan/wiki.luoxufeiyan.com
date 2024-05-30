@@ -22,4 +22,4 @@ chrome     4224  gao  136u  IPv4 778700      0t0  TCP localhost:58924->localhost
 Telegram   6611  gao   27u  IPv4 784936      0t0  TCP localhost:59208->localhost:1081 (ESTABLISHED)
 ```
 
-[[http://linuxtools-rst.readthedocs.io/zh_CN/latest/tool/lsof.html|外部链接]]
+[外部链接](http://linuxtools-rst.readthedocs.io/zh_CN/latest/tool/lsof.html)

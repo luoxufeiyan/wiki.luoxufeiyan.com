@@ -12,7 +12,7 @@ deb-src http://mirrors.ustc.edu.cn/raspbian/raspbian/ stretch main non-free cont
 ```
 随后`sudo apt update`更新。
 
-[[https://lug.ustc.edu.cn/wiki/mirrors/help/raspbian|Raspbian镜像使用帮助 [LUG@USTC]]]
+[Raspbian镜像使用帮助 [LUG@USTC](https://lug.ustc.edu.cn/wiki/mirrors/help/raspbian)]
 
 ## 解决树莓派SSH提示Connection reset的问题
 
@@ -30,7 +30,7 @@ sudo dpkg-reconfigure openssh-server
 ```
 删除SSH秘钥，重新配置SSH服务。
 
-[[http://qinfei.glrsmart.com/2017/08/14/s/|树莓派 Connection reset by *.*.*.* port 22]]
+[树莓派 Connection reset by *.*.*.* port 22](http://qinfei.glrsmart.com/2017/08/14/s/)
 
 ## 吃灰？
   * HomeBridge
@@ -38,5 +38,5 @@ sudo dpkg-reconfigure openssh-server
   * ~~MediaTomb~~ 不是很好用，还是miniDLNA吧。
   * DHT11房间温度监控
   * gammu手机短信转发
-  * [[http://www.instructables.com/id/Plantbot-Beta/|智能花盆]]
-  * [[https://www.adafruit.com/|更多DIY]]
+  * [智能花盆](http://www.instructables.com/id/Plantbot-Beta/)
+  * [更多DIY](https://www.adafruit.com/)

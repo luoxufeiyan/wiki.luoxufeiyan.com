@@ -23,4 +23,4 @@ int arr[][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
 ```
 
 ## 传参数为二维数组
-[[https://www.geeksforgeeks.org/pass-2d-array-parameter-c/|How to pass a 2D array as a parameter in C?]]
+[How to pass a 2D array as a parameter in C?](https://www.geeksforgeeks.org/pass-2d-array-parameter-c/)

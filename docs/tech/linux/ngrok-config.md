@@ -34,9 +34,9 @@ tunnels:
 
 ## Docker
 
-[[https://hub.docker.com/r/sequenceiq/ngrokd/|https://hub.docker.com/r/sequenceiq/ngrokd/]]
+[https://hub.docker.com/r/sequenceiq/ngrokd/](https://hub.docker.com/r/sequenceiq/ngrokd/)
 
-[[https://segmentfault.com/a/1190000010338848|centos下自己架设ngrok服务器（内网测试神器） - 个人文章 - SegmentFault]]
+[centos下自己架设ngrok服务器（内网测试神器） - 个人文章 - SegmentFault](https://segmentfault.com/a/1190000010338848)
 
 ## OpenWRT
 

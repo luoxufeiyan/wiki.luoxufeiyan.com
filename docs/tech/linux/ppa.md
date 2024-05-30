@@ -61,7 +61,7 @@ sudo apt-get install fluxgui
 
 ### TLP
 适用于笔记本的电源管理工具。
-[[http://linrunner.de/en/tlp/tlp.html|linrunner.de: TLP —— Linux Advanced Power Management]]
+[linrunner.de: TLP —— Linux Advanced Power Management](http://linrunner.de/en/tlp/tlp.html)
 ```
 sudo add-apt-repository ppa:linrunner/tlp
 sudo apt-get update

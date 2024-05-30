@@ -37,4 +37,4 @@ John saw **whom** last week.
 
 To **whom** were you talking?
 
-[[https://zh.wikihow.com/%E4%BD%BF%E7%94%A8%E6%AD%A3%E7%A1%AE%E2%80%9Cwho%E2%80%9D%E5%92%8C%E2%80%9Cwhom%E2%80%9D|如何使用正确“who”和“whom”]]
+[如何使用正确“who”和“whom”](https://zh.wikihow.com/%E4%BD%BF%E7%94%A8%E6%AD%A3%E7%A1%AE%E2%80%9Cwho%E2%80%9D%E5%92%8C%E2%80%9Cwhom%E2%80%9D)

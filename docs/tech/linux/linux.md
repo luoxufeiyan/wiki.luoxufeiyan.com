@@ -2,9 +2,9 @@
 
 ## 教程
 
-[[http://linux.vbird.org/|鳥哥的 Linux 私房菜 -- 鳥哥的 Linux 私房菜 首頁]]
+[鳥哥的 Linux 私房菜 -- 鳥哥的 Linux 私房菜 首頁](http://linux.vbird.org/)
 
-[[http://linuxtools-rst.readthedocs.io/zh_CN/latest/base/index.html|Linux基础 — Linux Tools Quick Tutorial]]
+[Linux基础 — Linux Tools Quick Tutorial](http://linuxtools-rst.readthedocs.io/zh_CN/latest/base/index.html)
 
 ## 一些Linux命令
 
@@ -21,7 +21,7 @@ dd if=/dev/zero of=test1g.bin bs=1M count=1024
 从零源生成一个1G大小的文件，每次读写1MB，读写1024次。
 
 ### 递归删除特定后缀的文件 
-[[http://bbs.csdn.net/topics/380267110|Linux递归删除文件命令]]**【危险操作】**
+[Linux递归删除文件命令](http://bbs.csdn.net/topics/380267110)**【危险操作】**
 
 ```
 find . -name "*.c" -exec rm {} \;
@@ -67,4 +67,4 @@ cp -p /etc/apt/sources.list{,.back}
 ![](http://turnoff.us/image/en/dont-sigkill-2.png)
 
 
-[[http://turnoff.us/geek/dont-sigkill-2/|Adopt a good cause, DON'T SIGKILL]]
+[Adopt a good cause, DON'T SIGKILL](http://turnoff.us/geek/dont-sigkill-2/)

@@ -13,9 +13,9 @@
 效果如下：
 ![](jupyter-anaconda-env.png)
 
-参考：[[https://stackoverflow.com/questions/39604271/conda-environments-not-showing-up-in-jupyter-notebook|anaconda - Conda environments not showing up in Jupyter Notebook - Stack Overflow]]
+参考：[anaconda - Conda environments not showing up in Jupyter Notebook - Stack Overflow](https://stackoverflow.com/questions/39604271/conda-environments-not-showing-up-in-jupyter-notebook)
 
-jupyter主页面还可以添加conda选项卡管理conda环境，需要在`base`环境下安装jupyter的包，方法参见：[[https://stackoverflow.com/a/39070588/3886059|ipython - In which conda environment is Jupyter executing? - Stack Overflow]]
+jupyter主页面还可以添加conda选项卡管理conda环境，需要在`base`环境下安装jupyter的包，方法参见：[ipython - In which conda environment is Jupyter executing? - Stack Overflow](https://stackoverflow.com/a/39070588/3886059)
 
 ## magic 命令
 
@@ -43,4 +43,4 @@ b          list    n=3
 * 使用`%reset`删除全部已分配的变量空间
 
 
-参考：[[https://github.com/lijin-THU/notes-python|lijin-THU/notes-python: 中文 Python 笔记]]
+参考：[lijin-THU/notes-python: 中文 Python 笔记](https://github.com/lijin-THU/notes-python)

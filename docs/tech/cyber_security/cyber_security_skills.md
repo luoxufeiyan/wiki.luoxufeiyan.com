@@ -1,6 +1,6 @@
 # 安全技能树简版
 
-作者：[[http://evilcos.me/|余弦]]
+作者：[余弦](http://evilcos.me/)
 
 - 说明
 高效习惯

@@ -1,8 +1,8 @@
 # 安装ocserv
 
-脚本：[[https://github.com/fanyueciyuan/eazy-for-ss/tree/master/ocservauto|eazy-for-ss/ocservauto at master · fanyueciyuan/eazy-for-ss · GitHub]]
+脚本：[eazy-for-ss/ocservauto at master · fanyueciyuan/eazy-for-ss · GitHub](https://github.com/fanyueciyuan/eazy-for-ss/tree/master/ocservauto)
 
-教程：[[https://www.fanyueciyuan.info/fq/ocserv-debian.html|OpenConnect server(ocserv)  一键脚本 for deibian 7+  - 翻跃 瓷院]]
+教程：[OpenConnect server(ocserv)  一键脚本 for deibian 7+  - 翻跃 瓷院](https://www.fanyueciyuan.info/fq/ocserv-debian.html)
 
 注意需要对防火墙做masquerade：
 

@@ -11,7 +11,7 @@
 [用做热点 hotspot](https://askubuntu.com/questions/318973/how-do-i-create-a-wifi-hotspot-sharing-wireless-internet-connection-single-adap)
 
 ## 办公类
-  * Tusk 印象笔记客户端 [[https://github.com/klauscfhq/tusk/releases|下载]]
+  * Tusk 印象笔记客户端 [下载](https://github.com/klauscfhq/tusk/releases)
 
 ## 影音类
   * [OpenShot 视频编辑器](https://www.openshot.org/zh-hans/)

@@ -17,7 +17,7 @@ long l = i;
 ```
 编译器主动发生，注意类型从低到高转换安全。
 
-[[https://www.cnblogs.com/solidblog/p/3381628.html|C++隐式类型转换]]
+[C++隐式类型转换](https://www.cnblogs.com/solidblog/p/3381628.html)
 
 
 ## if语句
@@ -37,17 +37,17 @@ if (!m_bool)
     // 语句
 }
 ```
-[[https://blog.csdn.net/mitu405687908/article/details/51085605|常见变量与零值比较]]
+[常见变量与零值比较](https://blog.csdn.net/mitu405687908/article/details/51085605)
 
 ### 与常量比较时常量写在左边
 
 防止漏写一个等号后通过编译
 
-[[https://blog.csdn.net/mitu405687908/article/details/51085605|常见变量与零值比较]]
+[常见变量与零值比较](https://blog.csdn.net/mitu405687908/article/details/51085605)
 
 ### 与浮点型比较时注意先定义精度
 
-[[https://www.cnblogs.com/youxin/p/3306136.html|float 浮点数与零值0比较大小 - youxin - 博客园]]
+[float 浮点数与零值0比较大小 - youxin - 博客园](https://www.cnblogs.com/youxin/p/3306136.html)
 
 ## 结构体
 
@@ -100,7 +100,7 @@ int main(void) {
     return EXIT_SUCCESS;
 }
 ```
-[[https://zh.wikipedia.org/wiki/Stdbool.h|stdbool.h - 维基百科，自由的百科全书]]
+[stdbool.h - 维基百科，自由的百科全书](https://zh.wikipedia.org/wiki/Stdbool.h)
 
 ### 三目运算符
 

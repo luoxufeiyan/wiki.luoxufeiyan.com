@@ -5,7 +5,7 @@
 ## 安装adb
 
 下载adb：
-[[https://developer.android.com/studio/releases/platform-tools.html|https://developer.android.com/studio/releases/platform-tools.html]]
+[https://developer.android.com/studio/releases/platform-tools.html](https://developer.android.com/studio/releases/platform-tools.html)
 
 把adb目录添加系统变量：
 
@@ -19,7 +19,7 @@
 
 下载`ADB Driver Installer`，连接手机，安装驱动。
 
-[[http://adbdriver.com/downloads|http://adbdriver.com/downloads]]
+[http://adbdriver.com/downloads](http://adbdriver.com/downloads)
 
 ## 测试
 
