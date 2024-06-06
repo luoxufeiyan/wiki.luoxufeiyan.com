@@ -11,6 +11,9 @@ enum ShoppingList : ulong
 }
 ```
 
+枚举的[默认值为0](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/enum)，是通过 `(E)0` 的方式生成了，即便没有枚举成员被赋值为0。
+
+
 ## 用法
 
 ### 查看值是否在 Enum 中
