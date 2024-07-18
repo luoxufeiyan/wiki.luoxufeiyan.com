@@ -247,7 +247,7 @@ ref: [https://gist.github.com/BoGnY/f9b1be6393234537c3e247f33e74094a](https://gi
 
 推送时，出现以下问题：
 
-![268ae902939a747107fd20db89f4ae5b.png](:/d648ba9e829b404eb84eb9dc459eb36a)
+![git-push-large-files-error](./git-push-large-files-error.png)
 
 
 
