@@ -116,22 +116,6 @@ git cherry-pick <commitHash>
 git reset --hard HEAD~1
 ```
 
-### Merge two git repositories 合并两个仓库
-
-如果两个仓库的历史记录不一致，需要合并两个仓库，基本方法是在新仓库上添加旧仓库做为远程，然后通过 merge 来合并两个仓库。
-
-例如将 project-old 合并到 project-new ：
-
-```shell
-cd path/to/project-new # 先进入新仓库
-git remote add project-old /path/to/project-old # 添加旧仓库为远程
-git fetch project-old --tags # 拉取旧仓库的所有 tag
-git merge --allow-unrelated-histories project-old/master # 通过 merge 将旧仓库的 master 分支合并入新仓库
-git remote remove project-old # 删除旧仓库的远程
-```
-
-ref: [How to merge two git repositories?](https://stackoverflow.com/questions/1425892/how-to-merge-two-git-repositories)
-
 ### 常用查询
 
 查询仓库总代码量：
