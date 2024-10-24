@@ -142,6 +142,12 @@ git log --author="Hugh Gao" --pretty=tformat: --numstat | awk '{ add += $1; subs
 git log  --format='%aN' | sort -u | while read name; do echo -en "$name\t"; git log --author="$name" --pretty=tformat:  --since =2018-02-08 --until=2024-03-08 --numstat | awk '{ add += $1; subs += $2; loc += $1 - $2 } END { printf "added lines: %s, removed lines: %s, total lines: %s\n", add, subs, loc }' -; done
 ```
 
+查询某个分支上的提交数量：
+
+```sh
+git rev-list --count <branch-name>
+```
+
 ## [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
 git 常用编写
