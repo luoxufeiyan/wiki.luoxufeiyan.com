@@ -49,3 +49,11 @@ ref:
 通过cmd命令，为主机设置一个NTP服务：`w32tm /config /syncfromflags:manual /manualpeerlist:"ntp_server" /update`
 
 需要使用管理员身份的cmd执行，将 `ntp_server` 替换为NTP服务的IP或者域名。
+
+## 安装 Windows
+
+### 安装 Windows 时不使用微软账户
+
+在设置界面，按下 Shift + F10 打开命令提示符，输入 `OOBE\BYPASSNRO` ，重启后，选择我没有互联网链接，即可。
+
+ref: [How to Install and Log In to Windows 11 Without a Microsoft Account](https://www.tomshardware.com/how-to/install-windows-11-without-microsoft-account)
