@@ -45,6 +45,8 @@ COPY 这类指令中的源文件的路径都是相对路径。这也是初学者
 
 ### 为 Docker 配置代理
 
+Set proxy for docker:
+
 Systemd 模式：
 
 如果 Docker 是通过 systemd 的方式启动管理的，可以通过以下方式配置代理：
@@ -67,3 +69,4 @@ sudo systemctl restart docker
 ```
 
 ref: [Configure the daemon with systemd | Docker Docs](https://docs.docker.com/config/daemon/systemd/)
+ref: [Use socks5 proxy from host for docker build - Stack Overflow](https://stackoverflow.com/a/76643435)
