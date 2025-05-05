@@ -1,14 +1,13 @@
 # Frontpage
 
-Welcome to my knowledge base, where I store my reading notes and code snippets. This wiki serves as a personal repository to organize and share knowledge I've acquired over time. The goal is to continuously expand this site with new insights from books, online courses, and hands-on coding projects.
+Welcome. This knowledge base started as my private corner of the web – a place to diligently collect reading notes, code snippets, and personal insights. It served simply as my own organizational tool for the knowledge I was accumulating.
 
-Topics covered range from programming languages like Python and Flutter to computer science fundamentals like data structures and algorithms. Practical tutorials on web development and machine learning techniques are included as well. Code samples demonstrate how to implement concepts in code.
+Over time, the desire to share what I've learned prompted me to open this space to others. The content largely centers on computer-related topics, including programming languages (like Python and Flutter), computer science foundations (data structures, algorithms), web development practices, and machine learning explorations, complete with illustrative code examples. You will also find occasional entries reflecting on personal experiences and notes from various books.
 
-The wiki is [open source](https://github.com/luoxufeiyan/wiki.luoxufeiyan.com/) and available for anyone to use as a learning resource. [Downloadable ebooks](https://github.com/luoxufeiyan/wiki.luoxufeiyan.com/archive/refs/heads/master.zip) in Markdown format provide an offline version.
+This site is intended as a continuously evolving resource, reflecting ongoing learning. In the spirit of sharing, it's [open source](https://github.com/luoxufeiyan/wiki.luoxufeiyan.com/), and [e-book in Markdown versions](https://github.com/luoxufeiyan/wiki.luoxufeiyan.com/archive/refs/heads/master.zip) are available for download if you prefer offline access. References are included for proper attribution where applicable.
 
-References are provided throughout for attribution.
+This knowledge base is provided 'as is,' representing my current understanding, without any form of warranty.
 
-**This knowledge base is provided as is without warranty of any kind.**
 
 ## 首页
 
