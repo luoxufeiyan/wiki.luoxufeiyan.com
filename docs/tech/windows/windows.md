@@ -20,6 +20,7 @@ ref:
   * [Sumatra PDF: PDF阅读器](https://www.sumatrapdfreader.org/free-pdf-reader.html)
   * [NetSetMan: 根据条件切换网卡及IP的工具](https://www.netsetman.com/en/freeware)
   * [Msys2：为Windows带来 GNU Core Utilities ，包括 gcc, nano, wc, ls 等一众UNIX命令](https://www.msys2.org/)
+  * [NSSM:将程序注册为服务](https://nssm.cc/)
 
 
 ## 常见问题
