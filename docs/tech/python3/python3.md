@@ -65,3 +65,6 @@ dic = {tup: 'value'}
   * 新式类
   * 经典类
 
+## 打包工具
+
+[Nuitka](https://github.com/Nuitka/Nuitka) 是一个 Python 编译器，它将 Python 代码转换为 C 代码并编译为可执行文件。实现对Python项目的打包和加密。并在无Python 环境的设备上使用。
