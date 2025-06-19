@@ -50,6 +50,12 @@ git config --local http.proxy socks5h://127.0.0.1:1080
 git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git --config "http.proxy=socks5h://127.0.0.1:1080"
 ```
 
+为特定的某个 remote 设置代理（以 GitHub 为例）：
+
+```shell
+git config http.https://github.com.proxy "socks5://127.0.0.1:1080"
+```
+
 取消代理：
 
 ```shell
