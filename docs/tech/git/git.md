@@ -59,7 +59,7 @@ git config --global http.https://github.com.proxy "socks5://127.0.0.1:1080"
 本地：
 
 ```shell
-git config --global http.10.243.80.212.proxy "http://127.0.0.1:8118"
+git config --global http.http://10.243.80.212.proxy "http://10.1.100.88:8118"
 ```
 
 取消代理：
