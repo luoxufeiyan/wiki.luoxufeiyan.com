@@ -53,7 +53,13 @@ git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git --con
 为特定的某个 remote 设置代理（以 GitHub 为例）：
 
 ```shell
-git config http.https://github.com.proxy "socks5://127.0.0.1:1080"
+git config --global http.https://github.com.proxy "socks5://127.0.0.1:1080"
+```
+
+本地：
+
+```shell
+git config --global http.10.243.80.212.proxy "http://127.0.0.1:8118"
 ```
 
 取消代理：
