@@ -12,3 +12,18 @@
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
 ```
+
+
+## 常用脚本
+
+将目录下的多个markdown文件汇总到一起。
+
+```powershell
+Get-ChildItem -Filter *.md | Where-Object { $_.Name -ne "merged.md" } | ForEach-Object {
+    $filename = $_.Name
+    "# 文件名: $filename" | Out-File -FilePath "merged.md" -Append -Encoding utf8
+    "`n" | Out-File -FilePath "merged.md" -Append -Encoding utf8
+    Get-Content $_.FullName -Encoding utf8 | Out-File -FilePath "merged.md" -Append -Encoding utf8
+    "`n`n---`n`n" | Out-File -FilePath "merged.md" -Append -Encoding utf8
+}
+```
